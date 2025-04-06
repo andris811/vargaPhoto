@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery - Varga Photography</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css">
-</head>
-<body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="menu-toggle" id="mobile-menu">
-        <span></span><span></span><span></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <header>
-    <h1>Gallery</h1>
-  </header>
-  <main>
-    <div class="gallery" id="gallery"></div>
-    <div class="instagram-embed">
-      <h2>Follow Me on Instagram</h2>
-      <iframe src="https://snapwidget.com/embed/1077165" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:600px"></iframe>
-    </div>
-  </main>
-  <footer>
-    <p>&copy; <span id="year"></span> Varga Photography</p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
-  <script src="js/gallery.js"></script>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById('mobile-menu').addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.toggle('active');
-    });
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Varga Photography</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css"
+    />
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+
+    <header>
+      <h1 class="header">Gallery</h1>
+    </header>
+    <main>
+      <div class="gallery" id="gallery"></div>
+    </main>
+    <footer>
+      <p>&copy; <span id="year"></span> Varga Photography</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/gallery.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("mobile-menu").addEventListener("click", () => {
+        document.querySelector(".nav-links").classList.toggle("active");
+      });
+    </script>
+    <script>
+      // Load navbar from navbar.html
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+        });
+    </script>
+  </body>
 </html>

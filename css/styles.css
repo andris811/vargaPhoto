@@ -45,6 +45,9 @@ body {
     border-radius: 5px;
     font-weight: bold;
   }
+  .header {
+    text-align: center;
+  }
   .intro {
     max-width: 800px;
     margin: 2rem auto;
@@ -67,8 +70,11 @@ body {
   }
   .gallery img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 10px;
+  }
+  .gallery img.landscape {
+    object-fit: cover;
   }
   footer {
     text-align: center;
@@ -127,5 +133,14 @@ body {
     }
     .hero p {
       font-size: 1rem;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .gallery {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px; 
+      padding: 1rem 10rem;
+      max-width: 100%; 
+      margin: 0 auto;
     }
   }

@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Varga Photography</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="menu-toggle" id="mobile-menu">
-        <span></span><span></span><span></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <header>
-    <h1>Contact Me</h1>
-  </header>
-  <main>
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </main>
-  <footer>
-    <p>&copy; <span id="year"></span> Varga Photography</p>
-  </footer>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById('mobile-menu').addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.toggle('active');
-    });
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Varga Photography</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+    <header>
+      <h1 class="header">Contact Me</h1>
+    </header>
+    <main>
+      <form action="https://formspree.io/f/mrbpobdy" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; <span id="year"></span> Varga Photography</p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("mobile-menu").addEventListener("click", () => {
+        document.querySelector(".nav-links").classList.toggle("active");
+      });
+    </script>
+    <script>
+      // Load navbar from navbar.html
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+        });
+    </script>
+  </body>
 </html>

@@ -14,3 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
       gallery.appendChild(link);
     }
   });
+
+  window.onload = function() {
+    const images = document.querySelectorAll('.gallery img');
+    images.forEach(img => {
+      const aspectRatio = img.naturalWidth / img.naturalHeight;
+      if (aspectRatio > 1) {
+        img.classList.add('landscape'); // Horizontal images
+      } else {
+        img.classList.add('portrait'); // Vertical images
+      }
+    });
+  };
