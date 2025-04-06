@@ -5,7 +5,7 @@ Built with HTML, CSS, and JavaScript — designed to be hosted on GitHub Pages o
 
 ## 🌍 Live Demo
 
-*(Coming soon - Add your GitHub Pages URL here once deployed)*
+https://andris811.github.io/vargaPhoto/
 
 ## 📁 Project Structure
 
@@ -30,7 +30,6 @@ varga-photography/
 - Hero section with background image on landing page
 - Image gallery using Lightbox2
 - Dynamic image loading from the `/images` folder
-- Instagram feed embedded via SnapWidget
 - Contact form powered by [Formspree](https://formspree.io/)
 - Fully accessible with keyboard and screen-reader support
 - Minimal dependencies, clean and easy to maintain
@@ -47,12 +46,10 @@ varga-photography/
    - Full-size images: `photo1.jpg`, `photo2.jpg`, ...
    - Thumbnails: `photo1_thumb.jpg`, `photo2_thumb.jpg`, ...
 
-3. Update the [SnapWidget](https://snapwidget.com/) embed in `gallery.html` to link to your own Instagram.
-
-4. Set up your [Formspree](https://formspree.io/) form:
+3. Set up your [Formspree](https://formspree.io/) form:
    - Replace `YOUR_FORM_ID` in `contact.html` with your form ID.
 
-5. Run locally:
+4. Run locally:
    Simply open `index.html` in your browser.
 
 ## 🚀 Deploy to GitHub Pages
@@ -67,7 +64,6 @@ varga-photography/
 - HTML5 & CSS3
 - Vanilla JavaScript
 - [Lightbox2](https://lokeshdhakar.com/projects/lightbox2/)
-- [SnapWidget](https://snapwidget.com/)
 - [Formspree](https://formspree.io/)
 
 ## 📸 License
