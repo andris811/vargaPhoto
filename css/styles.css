@@ -144,3 +144,28 @@ body {
       margin: 0 auto;
     }
   }
+  /* Language Switcher Styles */
+.language-switcher {
+  display: flex;
+  gap: 5px;
+}
+
+.language-option {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.language-option:hover {
+  background-color: #f0f0f0;
+}
+
+.language-option.active {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}

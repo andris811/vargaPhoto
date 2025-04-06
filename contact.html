@@ -9,19 +9,20 @@
   <body>
     <div id="navbar-container"></div>
     <header>
-      <h1 class="header">Contact Me</h1>
+      <h1 class="header" data-translate="contactTitle">Contact Me</h1>
     </header>
     <main>
       <form action="https://formspree.io/f/mrbpobdy" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="name" placeholder="Your Name" data-translate="namePlaceholder" required />
+        <input type="email" name="email" placeholder="Your Email" data-translate="emailPlaceholder" required />
         <textarea
           name="message"
           rows="5"
           placeholder="Your Message"
+          data-translate="messagePlaceholder"
           required
         ></textarea>
-        <button type="submit">Send</button>
+        <button type="submit" data-translate="sendButton">Send</button>
       </form>
     </main>
     <footer>
@@ -41,5 +42,6 @@
           document.getElementById("navbar-container").innerHTML = data;
         });
     </script>
+    <script src="js/language.js"></script>
   </body>
 </html>

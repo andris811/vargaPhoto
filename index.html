@@ -13,13 +13,17 @@
   <body>
     <div id="navbar-container"></div>
     <header class="hero">
-      <h1>Varga Photography</h1>
-      <p>Exploring the beauty of travel and nature through the lens.</p>
-      <a href="gallery.html" class="btn">View Gallery</a>
+      <h1 data-translate="heroTitle">Varga Photography</h1>
+      <p data-translate="heroDescription">
+        Exploring the beauty of travel and nature through my lens.
+      </p>
+      <a href="gallery.html" class="btn" data-translate="viewGallery"
+        >View Gallery</a
+      >
     </header>
     <section class="intro">
-      <h2>Welcome to My World</h2>
-      <p>
+      <h2 data-translate="introTitle">Welcome to My World</h2>
+      <p data-translate="introText">
         Hello! I'm a passionate traveler and nature lover, capturing unique
         moments and breathtaking landscapes from around the world. This website
         is my personal showcase, where each photo tells a story. Dive in and
@@ -31,9 +35,6 @@
     </footer>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
-      document.getElementById("mobile-menu").addEventListener("click", () => {
-        document.querySelector(".nav-links").classList.toggle("active");
-      });
     </script>
     <script>
       // Load navbar from navbar.html
@@ -43,5 +44,6 @@
           document.getElementById("navbar-container").innerHTML = data;
         });
     </script>
+    <script src="js/language.js"></script>
   </body>
 </html>
