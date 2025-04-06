@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,12 +7,17 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
   <header>
     <h1>Contact Me</h1>
@@ -23,15 +29,15 @@
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
-    <div class="instagram-embed">
-      <iframe src="https://snapwidget.com/embed/1077165" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:600px"></iframe>
-    </div>
   </main>
   <footer>
     <p>&copy; <span id="year"></span> Varga Photography</p>
   </footer>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById('mobile-menu').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
   </script>
 </body>
 </html>

@@ -6,20 +6,30 @@
   <title>Gallery - Varga Photography</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css">
-  
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
   <header>
     <h1>Gallery</h1>
   </header>
-  <main class="gallery" id="gallery"></main>
+  <main>
+    <div class="gallery" id="gallery"></div>
+    <div class="instagram-embed">
+      <h2>Follow Me on Instagram</h2>
+      <iframe src="https://snapwidget.com/embed/1077165" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:600px"></iframe>
+    </div>
+  </main>
   <footer>
     <p>&copy; <span id="year"></span> Varga Photography</p>
   </footer>
@@ -27,6 +37,9 @@
   <script src="js/gallery.js"></script>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById('mobile-menu').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
   </script>
 </body>
 </html>

@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Varga Photography</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <header class="hero">
-    <h1>Varga Photography</h1>
-    <p>Exploring the beauty of travel and nature through the lens.</p>
-    <a href="gallery.html" class="btn">View Gallery</a>
-  </header>
-  <section class="intro">
-    <h2>Welcome to My World</h2>
-    <p>Hello! I'm a passionate traveler and nature lover, capturing unique moments and breathtaking landscapes from around the world. This website is my personal showcase, where each photo tells a story. Dive in and explore!</p>
-  </section>
-  <footer>
-    <p>&copy; <span id="year"></span> Varga Photography</p>
-  </footer>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Varga Photography</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header class="hero">
+      <h1>Varga Photography</h1>
+      <p>Exploring the beauty of travel and nature through the lens.</p>
+      <a href="gallery.html" class="btn">View Gallery</a>
+    </header>
+    <section class="intro">
+      <h2>Welcome to My World</h2>
+      <p>
+        Hello! I'm a passionate traveler and nature lover, capturing unique
+        moments and breathtaking landscapes from around the world. This website
+        is my personal showcase, where each photo tells a story. Dive in and
+        explore!
+      </p>
+    </section>
+    <footer>
+      <p>&copy; <span id="year"></span> Varga Andras Photography</p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("mobile-menu").addEventListener("click", () => {
+        document.querySelector(".nav-links").classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>
