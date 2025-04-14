@@ -131,55 +131,21 @@ function checkNavbar() {
   }
 }
 
+// document.addEventListener('DOMContentLoaded', () => {
+  //   initLanguage();
+  // });
+  
+  // Modified waitForNavbar function
+  function waitForNavbar() {
+    if (document.getElementById('nav-links')) {
+      initLanguage();
+      setupMobileMenu();
+    } else {
+      setTimeout(waitForNavbar, 100);
+    }
+  }
+
 // Start everything when DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
-  waitForNavbar(); // This will initialize both language system and mobile menu when navbar is ready
-});
-
-
-function setupMobileMenu() {
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
-  const overlay = document.getElementById('overlay');
-
-  if (hamburger && navLinks) {
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      navLinks.classList.toggle('active');
-      overlay.classList.toggle('active');
-      document.body.classList.toggle('menu-open', navLinks.classList.contains('active'));
-    });
-
-    // Close menu when clicking on a nav link
-    document.querySelectorAll('#nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navLinks.classList.remove('active');
-        overlay.classList.remove('active');
-        document.body.classList.remove('menu-open');
-      });
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-      const isClickInside = hamburger.contains(e.target) || navLinks.contains(e.target);
-      if (!isClickInside && navLinks.classList.contains('active')) {
-        hamburger.classList.remove('active');
-        navLinks.classList.remove('active');
-        overlay.classList.remove('active');
-        document.body.classList.remove('menu-open');
-      }
-    });
-  }
-}
-
-
-// Modified waitForNavbar function
-function waitForNavbar() {
-  if (document.getElementById('nav-links')) {
-    initLanguage();
-    setupMobileMenu(); // Add this line
-  } else {
-    setTimeout(waitForNavbar, 100);
-  }
-}
+  document.addEventListener('DOMContentLoaded', () => {
+    waitForNavbar(); // This will initialize both language system and mobile menu when navbar is ready
+  });
