@@ -1,0 +1,18 @@
+{
+    "siteTitle": "Varga Fotó",
+    "navHome": "Kezdőlap",
+    "navGallery": "Galéria",
+    "navContact": "Kapcsolat",
+    "heroTitle": "Varga Fotó",
+    "heroDescription": "Utazás és természet szépségének felfedezése a lencsém mögül.",
+    "viewGallery": "Galéria Megtekintése",
+    "introTitle": "Üdvözöllek a világomban",
+    "introText": "Sziasztok! Szenvedélyes utazó és természetkedvelő vagyok, aki egyedi pillanatokat és lenyűgöző tájakat örökít meg a világ minden tájáról. Ez a weboldal a személyes kiállításom, ahol minden fotó egy történetet mesél el. Fedezd fel!",
+    "galleryTitle": "Galéria",
+    "contactTitle": "Kapcsolat",
+    "namePlaceholder": "Neved",
+    "emailPlaceholder": "Email címed",
+    "messagePlaceholder": "Üzeneted",
+    "sendButton": "Küldés",
+    "copyright": "© {year} Varga Photography"
+  }

@@ -56,74 +56,130 @@ const translations = {
   }
 };
 
-// Function to change language
-function changeLanguage(lang) {
-  // Save to localStorage
-  localStorage.setItem('preferredLanguage', lang);
-  
-  // Update active button state
-  document.querySelectorAll('.language-option').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === lang);
-  });
-  
-  // Update all translatable elements
-  document.querySelectorAll('[data-translate]').forEach(el => {
-    const key = el.getAttribute('data-translate');
-    if (translations[lang] && translations[lang][key]) {
-      if (el.placeholder) {
-        el.placeholder = translations[lang][key];
-      } else {
-        el.textContent = translations[lang][key];
+// Main function to change language
+async function changeLanguage(lang) {
+  try {
+    // Try loading from JSON first
+    const response = await fetch(`public/lang/${lang}.json`);
+    const langData = response.ok ? await response.json() : translations[lang];
+    
+    // 1. Update UI elements
+    document.querySelectorAll('[data-translate]').forEach(el => {
+      const key = el.getAttribute('data-translate');
+      if (langData[key]) {
+        if (el.placeholder) {
+          el.placeholder = langData[key];
+        } else {
+          el.textContent = langData[key];
+        }
       }
-    }
-  });
-  
-  // Update page titles
-  const pageTitles = {
-    'index.html': translations[lang].siteTitle,
-    'gallery.html': `${translations[lang].navGallery} - ${translations[lang].siteTitle}`,
-    'contact.html': `${translations[lang].navContact} - ${translations[lang].siteTitle}`
-  };
-  
-  const currentPage = window.location.pathname.split('/').pop();
-  if (pageTitles[currentPage]) {
-    document.title = pageTitles[currentPage];
+    });
+
+    // 2. Update active button state
+    document.querySelectorAll('.language-option').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+
+    // 3. Save preference and update HTML lang attribute
+    localStorage.setItem('preferredLanguage', lang);
+    document.documentElement.lang = lang;
+
+    // 4. Update page title
+    const pageMap = {
+      'index.html': langData.siteTitle,
+      'gallery.html': `${langData.navGallery} - ${langData.siteTitle}`,
+      'contact.html': `${langData.navContact} - ${langData.siteTitle}`
+    };
+    const currentPage = window.location.pathname.split('/').pop();
+    if (pageMap[currentPage]) document.title = pageMap[currentPage];
+
+    // 5. Update copyright
+    const year = new Date().getFullYear();
+    document.querySelectorAll('footer p').forEach(el => {
+      el.textContent = langData.copyright.replace('{year}', year);
+    });
+
+  } catch (error) {
+    console.error('Language change failed:', error);
+    // Fallback to English if error occurs
+    if (lang !== 'en') changeLanguage('en');
   }
-  
-  // Update copyright year
-  const year = new Date().getFullYear();
-  document.querySelectorAll('footer p').forEach(el => {
-    el.textContent = translations[lang].copyright.replace('{year}', year);
-  });
-  
-  // Update HTML lang attribute
-  document.documentElement.lang = lang;
 }
 
-// Initialize language
+// Initialize language system
 function initLanguage() {
-  // Check for saved preference or browser language
+  // 1. Set up button listeners
+  document.querySelectorAll('.language-option').forEach(btn => {
+    btn.addEventListener('click', () => changeLanguage(btn.dataset.lang));
+  });
+
+  // 2. Determine default language
   const savedLang = localStorage.getItem('preferredLanguage');
   const browserLang = navigator.language.substring(0, 2);
   const defaultLang = savedLang || (['en', 'hu', 'zh'].includes(browserLang) ? browserLang : 'en');
   
+  // 3. Apply default language
   changeLanguage(defaultLang);
-  
-  // Add event listeners to language buttons
-  document.querySelectorAll('.language-option').forEach(btn => {
-    btn.addEventListener('click', () => {
-      changeLanguage(btn.dataset.lang);
-    });
-  });
 }
 
-// Wait for navbar to load then initialize
-function waitForNavbar() {
+// Wait for navbar to load
+function checkNavbar() {
   if (document.querySelector('.language-switcher')) {
     initLanguage();
+  } else {
+    setTimeout(checkNavbar, 100);
+  }
+}
+
+// Start everything when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+  waitForNavbar(); // This will initialize both language system and mobile menu when navbar is ready
+});
+
+
+function setupMobileMenu() {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  const overlay = document.getElementById('overlay');
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      overlay.classList.toggle('active');
+      document.body.classList.toggle('menu-open', navLinks.classList.contains('active'));
+    });
+
+    // Close menu when clicking on a nav link
+    document.querySelectorAll('#nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.classList.remove('menu-open');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      const isClickInside = hamburger.contains(e.target) || navLinks.contains(e.target);
+      if (!isClickInside && navLinks.classList.contains('active')) {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.classList.remove('menu-open');
+      }
+    });
+  }
+}
+
+
+// Modified waitForNavbar function
+function waitForNavbar() {
+  if (document.getElementById('nav-links')) {
+    initLanguage();
+    setupMobileMenu(); // Add this line
   } else {
     setTimeout(waitForNavbar, 100);
   }
 }
-
-document.addEventListener('DOMContentLoaded', waitForNavbar);
