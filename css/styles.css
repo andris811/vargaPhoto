@@ -5,6 +5,13 @@ body {
   color: #333;
 }
 
+.logo-img {
+  height: 70px;
+  width: auto;
+  display: block;
+  border-radius: 10px;
+}
+
 nav {
   background-color: #fff;
   padding: 1rem;
