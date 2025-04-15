@@ -25,9 +25,8 @@
         <button type="submit" data-translate="sendButton">Send</button>
       </form>
     </main>
-    <footer>
-      <p>&copy; <span id="year"></span> Varga Photography</p>
-    </footer>
+    
+    <div id="footer-placeholder"></div>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
       document.getElementById("mobile-menu").addEventListener("click", () => {
@@ -42,6 +41,7 @@
           document.getElementById("navbar-container").innerHTML = data;
         });
     </script>
+    <script src="js/main.js"></script>
     <script src="js/language.js"></script>
     <script src="js/navbar.js"></script>
   </body>
