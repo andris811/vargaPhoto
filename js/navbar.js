@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+        });
+});
+
 function setupMobileMenu() {
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');

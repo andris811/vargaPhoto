@@ -82,20 +82,6 @@
     </main>
     <button id="back-to-top" title="Go to top">↑</button>
     <div id="footer-placeholder"></div>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-      document.getElementById("mobile-menu").addEventListener("click", () => {
-        document.querySelector(".nav-links").classList.toggle("active");
-      });
-    </script>
-    <script>
-      // Load navbar from navbar.html
-      fetch("navbar.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("navbar-container").innerHTML = data;
-        });
-    </script>
     <script src="js/main.js"></script>
     <script src="js/language.js"></script>
     <script src="js/navbar.js"></script>
