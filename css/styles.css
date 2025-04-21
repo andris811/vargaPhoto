@@ -327,3 +327,30 @@ button:hover {
 #back-to-top:hover {
   opacity: 1;
 }
+
+.contact-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-me,
+.social-media,
+.contact-form {
+  margin-bottom: 3rem;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin: 0.5rem 0;
+}
+
+.social-links a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+}

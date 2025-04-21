@@ -3,29 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Varga Photography</title>
+    <title>Varga Photography</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div id="navbar-container"></div>
-    <header>
-      <h1 class="header" data-translate="contactTitle">Contact Me</h1>
-    </header>
-    <main>
-      <form action="https://formspree.io/f/mrbpobdy" method="POST">
-        <input type="text" name="name" placeholder="Your Name" data-translate="namePlaceholder" required />
-        <input type="email" name="email" placeholder="Your Email" data-translate="emailPlaceholder" required />
-        <textarea
-          name="message"
-          rows="5"
-          placeholder="Your Message"
-          data-translate="messagePlaceholder"
-          required
-        ></textarea>
-        <button type="submit" data-translate="sendButton">Send</button>
-      </form>
+    <main class="contact-page">
+      <section class="about-me">
+        <h2 data-translate="aboutTitle">📸 About Me</h2>
+        <p data-translate="aboutText"></p>
+      </section>
+      <section class="social-media">
+        <h3 data-translate="find-me">🌐 Connect with Me</h3>
+        <ul class="social-links">
+          <li>
+            <a
+              href="https://www.instagram.com/andris811"
+              target="_blank"
+              rel="noopener"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.flickr.com/yourusername"
+              target="_blank"
+              rel="noopener"
+              >Flickr</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://500px.com/yourusername"
+              target="_blank"
+              rel="noopener"
+              >500px</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.xiaohongshu.com/user/profile/5f1fa802000000000100019f"
+              target="_blank"
+              rel="noopener"
+              >Red（小红书）</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="contact-form">
+        <header>
+          <h1 class="header" data-translate="contactTitle">Contact Me</h1>
+        </header>
+        <form action="https://formspree.io/f/mrbpobdy" method="POST">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            data-translate="namePlaceholder"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            data-translate="emailPlaceholder"
+            required
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            data-translate="messagePlaceholder"
+            required
+          ></textarea>
+          <button type="submit" data-translate="sendButton">Send</button>
+        </form>
+      </section>
     </main>
-    
+    <button id="back-to-top" title="Go to top">↑</button>
     <div id="footer-placeholder"></div>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
