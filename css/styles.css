@@ -5,6 +5,28 @@ body {
   color: #333;
 }
 
+/* Dark theme overrides */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .nav-links {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .btn {
+  background-color: #333;
+  color: #fff;
+}
+body.dark-mode nav a {
+  color: white;
+}
+body.dark-mode .hamburger span {
+  background-color: #fff;
+}
+
 .logo-img {
   height: 70px;
   width: auto;
@@ -197,6 +219,10 @@ button:hover {
     transition: transform 0.3s ease-in-out;
     z-index: 999;
   }
+
+  body.dark-mode #nav-links {
+    background: #333;
+  }
   
   #nav-links.active {
     transform: translateX(0);
@@ -278,6 +304,16 @@ button:hover {
   transform: scale(1.1);
   animation: bounce 0.3s ease;
 }
+body.dark-mode .language-option.active {
+  background-color: #fff;
+  color: #333;
+}
+body.dark-mode .language-option:hover {
+  background-color: #555;
+}
+body.dark-mode .language-option.active:hover {
+  color: #fff;
+}
 
 @keyframes bounce {
   0%   { transform: scale(1); }
@@ -353,4 +389,54 @@ button:hover {
   color: var(--accent-color);
   text-decoration: none;
   font-weight: bold;
+}
+
+
+/* Dark mode toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #555;
+}
+
+body.dark-mode input:checked {
+  background-color: #fff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
 }
