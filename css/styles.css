@@ -440,3 +440,8 @@ body.dark-mode input:checked {
 input:checked + .slider:before {
   transform: translateX(20px);
 }
+
+/* Add to your CSS */
+body, nav, button, a {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
