@@ -67,10 +67,10 @@ body.dark-mode .language-option.active:hover {
   color: #fff;
 }
 
-.dark-mode .gallery img {
+/* .dark-mode .gallery img {
   border: 2px solid #fff;
   border-radius: 10px;
-}
+} */
 
 /* ========== NAVIGATION ========== */
 nav {
@@ -167,7 +167,7 @@ nav a {
 }
 /* Dark mode */
 body.dark-mode .contact-page {
-  background-color: #222; /* Dark but slightly lighter than full black */
+  background-color: #222;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
 }
 
@@ -188,8 +188,18 @@ body.dark-mode .contact-page {
 .gallery-item {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   transition: transform 0.3s ease;
+}
+
+/* Hide all images by default */
+.gallery-item {
+  display: none;
+}
+
+/* Show first category by default */
+.gallery-item.nature {
+  display: block;
 }
 
 .gallery-item:hover {
@@ -209,16 +219,6 @@ body.dark-mode .contact-page {
   font-size: 0.9rem;
 }
 
-/* .gallery img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-} */
-
-/* .gallery img.landscape {
-  object-fit: cover;
-} */
-
 /* ========== GALLERY CONTROLLS ========== */
 .gallery-controls {
   display: flex;
@@ -233,7 +233,7 @@ body.dark-mode .contact-page {
   padding: 8px 16px;
   background: #ccc;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
@@ -317,7 +317,8 @@ footer {
 /* ========== LANGUAGE SWITCHER ========== */
 .language-switcher {
   display: flex;
-  gap: 30px;
+  gap: 10px;
+  padding-left: 10px;
 }
 
 .language-option {
@@ -442,13 +443,13 @@ input:checked + .slider:before {
 .theme-toggle {
   display: flex;
   align-items: center;
-  gap: 8px; /* or use margin-left as you prefer */
-  margin-left: auto; /* optional: push it to the right */
+  gap: 8px;
+  margin-left: auto;
 }
 
 .theme-label {
   font-size: 0.9rem;
-  color: var(--text-color); /* match your theme */
+  color: var(--text-color);
   user-select: none;
 }
 
