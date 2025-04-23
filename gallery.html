@@ -15,6 +15,15 @@
 
     <header>
       <h1 class="header" data-translate="galleryTitle"></h1>
+      <div class="gallery-controls">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="portrait">Portrait</button>
+        <button class="filter-btn" data-filter="landscape">Landscape</button>
+        <button class="filter-btn" data-filter="city">City</button>
+        <button class="filter-btn" data-filter="film">Film</button>
+        <button class="filter-btn" data-filter="bw">Black & White</button>
+      </div>
     </header>
     <main>
       <div class="gallery" id="gallery"></div>
@@ -23,7 +32,7 @@
     
     <div id="footer-placeholder"></div>
     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
-    <script src="js/gallery.js"></script>
+    <script type="module" src="js/gallery.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/language.js"></script>

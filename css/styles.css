@@ -109,7 +109,7 @@ nav a {
 /* ========== HERO SECTION ========== */
 .hero {
   height: 100vh;
-  background: url("../images/hero.jpeg") center/cover no-repeat;
+  background: url("../assets/images/hero.jpeg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,19 +180,85 @@ body.dark-mode .contact-page {
 /* ========== GALLERY ========== */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 15px;
   padding: 1rem;
 }
 
-.gallery img {
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.02);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-title {
+  padding: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* .gallery img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+} */
+
+/* .gallery img.landscape {
+  object-fit: cover;
+} */
+
+/* ========== GALLERY CONTROLLS ========== */
+.gallery-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0 10px;
 }
 
-.gallery img.landscape {
-  object-fit: cover;
+.filter-btn {
+  padding: 8px 16px;
+  background: #ccc;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  color: #333;
+}
+.dark-mode .filter-btn {
+  background-color: #333;
+  color: #fff;
+}
+
+.filter-btn:hover {
+  background: #555;
+  color: #fff;
+}
+
+.filter-btn.active {
+  background: #333;
+  color: white;
+}
+.dark-mode .filter-btn.active {
+  background-color: #555;
+}
+.dark-mode .filter-btn:hover {
+  background: #555;
 }
 
 /* ========== FORMS ========== */
@@ -445,10 +511,29 @@ input:checked + .slider:before {
     font-size: 1rem;
   }
 
-  .gallery {
+  /* .gallery {
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem;
     gap: 10px;
+  } */
+
+  .gallery-controls {
+    gap: 6px;
+  }
+  
+  .filter-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .gallery-item img {
+    height: 180px;
   }
   
   #hamburger {
