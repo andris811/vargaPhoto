@@ -67,11 +67,6 @@ body.dark-mode .language-option.active:hover {
   color: #fff;
 }
 
-/* .dark-mode .gallery img {
-  border: 2px solid #fff;
-  border-radius: 10px;
-} */
-
 /* ========== NAVIGATION ========== */
 nav {
   background-color: #fff;
@@ -183,18 +178,24 @@ body.dark-mode .contact-page {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 15px;
   padding: 1rem;
+  opacity: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  /* border-radius: 8px; */
-  transition: transform 0.3s ease;
+.gallery.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
 }
 
-/* Hide all images by default */
 .gallery-item {
   display: none;
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: auto;
 }
 
 /* Show first category by default */

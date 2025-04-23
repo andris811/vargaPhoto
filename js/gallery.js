@@ -3,6 +3,7 @@ import galleryData from "./gallery-data.js";
 // Initialize gallery
 function initGallery() {
   const gallery = document.getElementById("gallery");
+  if (!gallery) return;
 
   // Clear existing content
   gallery.innerHTML = "";
@@ -23,40 +24,51 @@ function initGallery() {
     gallery.appendChild(galleryItem);
   });
 
-  // Initialize filter buttons
+  // Initialize filter buttons with transitions
   document.querySelectorAll(".filter-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const filter = btn.dataset.filter;
 
-      // Update active button
-      document
-        .querySelectorAll(".filter-btn")
-        .forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
+      // Skip if already active
+      if (btn.classList.contains("active")) return;
 
-      // Filter items
-      document.querySelectorAll(".gallery-item").forEach((item) => {
-        item.style.display =
-          filter === "all" || item.dataset.category === filter
-            ? "block"
-            : "none";
-      });
+      // Start transition
+      gallery.classList.add("hidden");
+      
+      // Wait for fade-out to complete
+      setTimeout(() => {
+        // Update active button
+        document.querySelectorAll(".filter-btn").forEach((b) => 
+          b.classList.remove("active"));
+        btn.classList.add("active");
+
+        // Filter items
+        document.querySelectorAll(".gallery-item").forEach((item) => {
+          item.style.display = item.dataset.category === filter ? "block" : "none";
+        });
+
+        // Re-init Lightbox for new category
+        if (window.lightbox) {
+          lightbox.init(`.gallery-item[data-category="${filter}"] a`);
+        }
+
+        // Complete transition
+        gallery.classList.remove("hidden");
+      }, 300); // Match your CSS transition duration
     });
   });
 
-  // Initialize Lightbox
+  // Initialize Lightbox with category isolation
   if (window.lightbox) {
-    // Initialize Lightbox with category isolation
     lightbox.option({
       resizeDuration: 200,
       wrapAround: false,
       albumLabel: "",
       alwaysShowNavOnTouchDevices: true,
       filter: function () {
-        const activeCategory =
-          document.querySelector(".filter-btn.active")?.dataset.filter;
+        const activeCategory = document.querySelector(".filter-btn.active")?.dataset.filter;
         return $(this).data("category") === activeCategory;
-      },
+      }
     });
 
     // Store original Lightbox init function
@@ -64,29 +76,21 @@ function initGallery() {
 
     // Override Lightbox init to filter images by category
     lightbox.init = function (selector) {
-      const activeCategory =
-        document.querySelector(".filter-btn.active")?.dataset.filter;
-
-      // Only select images from active category
-      const filteredSelector = `${selector}[data-category="${activeCategory}"]`;
-
+      const activeCategory = document.querySelector(".filter-btn.active")?.dataset.filter;
+      const filteredSelector = activeCategory 
+        ? `${selector}[data-category="${activeCategory}"]` 
+        : selector;
       originalInit.call(this, filteredSelector);
     };
-
-    // Re-init Lightbox when changing categories
-    document.querySelectorAll(".filter-btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        if (window.lightbox) {
-          lightbox.init(".gallery-item a");
-        }
-      });
-    });
   }
+
+  // Activate first category by default
+  document.querySelector(".filter-btn")?.classList.add("active");
 }
 
-// prevent right clicks on the images
+// Prevent right clicks on the images
 document.addEventListener("contextmenu", function (e) {
-  if (e.target.tagName === "IMG") {
+  if (e.target.closest("#gallery")) {
     e.preventDefault();
   }
 });
