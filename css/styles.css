@@ -5,6 +5,8 @@ body {
   background-color: #f9f9f9;
   color: #333;
   transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 html, body {
@@ -13,6 +15,10 @@ html, body {
   padding: 0;
 }
 
+.content-wrapper {
+  flex: 1 0 auto;
+  padding-bottom: 2rem; /* Space above footer */
+}
 
 .wrapper {
   min-height: 100%;
@@ -103,7 +109,7 @@ nav a {
 
 /* ========== HERO SECTION ========== */
 .hero {
-  height: 100vh;
+  height: 50vh;
   background: url("../assets/images/hero.jpeg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -302,6 +308,10 @@ button:hover {
 }
 
 /* ========== FOOTER ========== */
+#footer-placeholder {
+  flex-shrink: 0;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
