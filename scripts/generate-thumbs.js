@@ -25,9 +25,12 @@ CATEGORIES.forEach(category => {
         const input = path.join(categoryPath, file);
         const output = path.join(thumbPath, file);
 
-        if (!fs.existsSync(output)) {
-          execSync(`magick convert "${input}" -resize 500x500^ -gravity center -extent 500x500 "${output}"`);
-          console.log(`✅ Generated thumb: ${category}/${file}`);
+        // Always regenerate thumbnail (remove the existence check)
+        try {
+          execSync(`magick "${input}" -resize 500x500^ -gravity center -extent 500x500 "${output}"`);
+          console.log(`🔄 Regenerated thumb: ${category}/${file}`);
+        } catch (error) {
+          console.error(`❌ Failed to generate thumb for ${category}/${file}:`, error.message);
         }
       });
   }

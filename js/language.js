@@ -63,28 +63,46 @@ async function changeLanguage(lang) {
     const response = await fetch(`public/lang/${lang}.json`);
     const langData = response.ok ? await response.json() : translations[lang];
     
-    // 1. Update UI elements
+    // 1. Update UI elements with support for nested keys
     document.querySelectorAll('[data-translate]').forEach(el => {
       const key = el.getAttribute('data-translate');
-      if (langData[key]) {
+      let translation = langData;
+      
+      // Handle nested keys (e.g., filters.nature)
+      const keys = key.split('.');
+      for (const k of keys) {
+        translation = translation?.[k];
+        if (!translation) break;
+      }
+
+      if (translation) {
         if (el.placeholder) {
-          el.placeholder = langData[key];
+          el.placeholder = translation;
         } else {
-          el.textContent = langData[key];
+          el.textContent = translation;
         }
       }
     });
 
-    // 2. Update active button state
+    // 2. Update theme toggle label based on current mode
+    const themeLabel = document.querySelector('.theme-label');
+    if (themeLabel) {
+      const darkMode = document.body.classList.contains('dark-mode');
+      themeLabel.textContent = darkMode 
+        ? langData.theme?.light || 'Light Mode' 
+        : langData.theme?.dark || 'Dark Mode';
+    }
+
+    // 3. Update active button state
     document.querySelectorAll('.language-option').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.lang === lang);
     });
 
-    // 3. Save preference and update HTML lang attribute
+    // 4. Save preference and update HTML lang attribute
     localStorage.setItem('preferredLanguage', lang);
     document.documentElement.lang = lang;
 
-    // 4. Update page title
+    // 5. Update page title
     const pageMap = {
       'index.html': langData.siteTitle,
       'gallery.html': `${langData.navGallery} - ${langData.siteTitle}`,
@@ -93,10 +111,10 @@ async function changeLanguage(lang) {
     const currentPage = window.location.pathname.split('/').pop();
     if (pageMap[currentPage]) document.title = pageMap[currentPage];
 
-    // 5. Update copyright
+    // 6. Update copyright
     const year = new Date().getFullYear();
     document.querySelectorAll('footer p').forEach(el => {
-      el.textContent = langData.copyright.replace('{year}', year);
+      el.textContent = langData.copyright?.replace('{year}', year) || `© ${year} Varga Photography`;
     });
 
   } catch (error) {
@@ -122,30 +140,20 @@ function initLanguage() {
   changeLanguage(defaultLang);
 }
 
-// Wait for navbar to load
-function checkNavbar() {
-  if (document.querySelector('.language-switcher')) {
+// Modified waitForNavbar function
+function waitForNavbar() {
+  if (document.getElementById('nav-links')) {
     initLanguage();
+    setupMobileMenu();
   } else {
-    setTimeout(checkNavbar, 100);
+    setTimeout(waitForNavbar, 100);
   }
 }
 
-// document.addEventListener('DOMContentLoaded', () => {
-  //   initLanguage();
-  // });
-  
-  // Modified waitForNavbar function
-  function waitForNavbar() {
-    if (document.getElementById('nav-links')) {
-      initLanguage();
-      setupMobileMenu();
-    } else {
-      setTimeout(waitForNavbar, 100);
-    }
-  }
-
 // Start everything when DOM is ready
-  document.addEventListener('DOMContentLoaded', () => {
-    waitForNavbar(); // This will initialize both language system and mobile menu when navbar is ready
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  waitForNavbar(); // This will initialize both language system and mobile menu when navbar is ready
+});
+
+// Make changeLanguage available globally for theme.js
+window.changeLanguage = changeLanguage;

@@ -3,15 +3,16 @@ function applyTheme(darkMode) {
   const toggle = document.getElementById("theme-toggle");
   if (toggle) toggle.checked = darkMode;
 
-  const themeLabel = document.querySelector(".theme-label");
-  if (themeLabel) {
-    themeLabel.textContent = darkMode ? "Light Mode" : "Dark Mode";
-  }
-
   // Update logo for dark mode
   const logo = document.querySelector(".logo-img");
   if (logo) {
     logo.style.filter = darkMode ? "brightness(0.8) contrast(1.2)" : "none";
+  }
+
+  // Update theme label via language system
+  if (window.changeLanguage) {
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    changeLanguage(currentLanguage); // This will refresh the theme label text
   }
 }
 
@@ -30,6 +31,7 @@ function setupThemeToggle() {
       localStorage.setItem("theme", dark ? "dark" : "light");
     });
   }
+
   // Follow system preference
   window
     .matchMedia("(prefers-color-scheme: dark)")

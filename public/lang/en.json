@@ -17,5 +17,17 @@
   "copyright": "© {year} Varga Photography",
   "aboutTitle": "📸 About Me",
   "aboutText": "Hello! I'm based in Shanghai and passionate about capturing travel and nature scenes. I shoot with a Fujifilm X-T30 and a variety of prime and zoom lenses, as well as a Ricoh GR3x. Whether it’s city vibes or remote landscapes, I’m always chasing light and storytelling moments through the lens.",
-  "find-me": "🌐 Find me here:"
+  "find-me": "🌐 Find me here:",
+  "filters": {
+    "nature": "Nature",
+    "portrait": "Portrait",
+    "landscape": "Landscape",
+    "city": "City",
+    "film": "Film",
+    "bw": "Black & White"
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode"
+  }
 }

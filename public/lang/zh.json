@@ -17,5 +17,17 @@
   "copyright": "© {year} Varga Photography",
   "aboutTitle": "📸 关于我",
   "aboutText": "你好！我现在居住在上海，热爱拍摄旅行和自然风光。我使用富士 X-T30 相机和各种定焦及变焦镜头，还有 Ricoh GR3x 相机。无论是城市街景还是偏远的自然风光，我总是在镜头后追逐光影与故事。",
-  "find-me": "🌐 在这里找到我:"
+  "find-me": "🌐 在这里找到我:",
+  "filters": {
+    "nature": "自然",
+    "portrait": "人像",
+    "landscape": "风景",
+    "city": "城市",
+    "film": "胶片",
+    "bw": "黑白"
+  },
+  "theme": {
+    "dark": "深色模式",
+    "light": "浅色模式"
+  }
 }

@@ -17,5 +17,17 @@
   "copyright": "© {year} Varga Photography",
   "aboutTitle": "📸 Rólam",
   "aboutText": "Sziasztok! Sanghajban élek, és szenvedélyesen szeretek utazási és természetfotókat készíteni. Fujifilm X-T30 fényképezőgépet, különféle fix és zoom objektíveket, valamint egy Ricoh GR3x-et használok. Legyen szó városi hangulatról vagy távoli tájakról, mindig a fény és a történetmesélés pillanatait keresem a lencsémen keresztül.",
-  "find-me": "🌐 Megtalálhatsz az alábbi helyeken:"
+  "find-me": "🌐 Megtalálhatsz az alábbi helyeken:",
+  "filters": {
+    "nature": "Természet",
+    "portrait": "Portré",
+    "landscape": "Tájkép",
+    "city": "Város",
+    "film": "Film",
+    "bw": "Fekete-fehér"
+  },
+  "theme": {
+    "dark": "Sötét mód",
+    "light": "Világos mód"
+  }
 }

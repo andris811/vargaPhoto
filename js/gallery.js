@@ -8,8 +8,16 @@ function initGallery() {
   // Clear existing content
   gallery.innerHTML = "";
 
+    // Sort galleryData numerically based on image filename
+    const sortedGalleryData = [...galleryData].sort((a, b) => {
+      // Extract numbers from filenames (works with formats like "1.jpg", "photo2.jpg")
+      const numA = parseInt(a.src.match(/(\d+)/)?.[0]) || 0;
+      const numB = parseInt(b.src.match(/(\d+)/)?.[0]) || 0;
+      return numA - numB;
+    });
+
   // Create gallery items
-  galleryData.forEach((item) => {
+  sortedGalleryData.forEach((item) => {
     const galleryItem = document.createElement("div");
     galleryItem.className = `gallery-item ${item.category}`;
     galleryItem.dataset.category = item.category;
@@ -90,7 +98,7 @@ function initGallery() {
 
 // Prevent right clicks on the images
 document.addEventListener("contextmenu", function (e) {
-  if (e.target.closest("#gallery")) {
+  if (e.target.closest("#gallery") || e.target.classList.contains("lb-image")) {
     e.preventDefault();
   }
 });
