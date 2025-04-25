@@ -8,13 +8,13 @@ function initGallery() {
   // Clear existing content
   gallery.innerHTML = "";
 
-    // Sort galleryData numerically based on image filename
-    const sortedGalleryData = [...galleryData].sort((a, b) => {
-      // Extract numbers from filenames (works with formats like "1.jpg", "photo2.jpg")
-      const numA = parseInt(a.src.match(/(\d+)/)?.[0]) || 0;
-      const numB = parseInt(b.src.match(/(\d+)/)?.[0]) || 0;
-      return numA - numB;
-    });
+  // Sort galleryData numerically based on image filename
+  const sortedGalleryData = [...galleryData].sort((a, b) => {
+    // Extract numbers from filenames (works with formats like "1.jpg", "photo2.jpg")
+    const numA = parseInt(a.src.match(/(\d+)/)?.[0]) || 0;
+    const numB = parseInt(b.src.match(/(\d+)/)?.[0]) || 0;
+    return numA - numB;
+  });
 
   // Create gallery items
   sortedGalleryData.forEach((item) => {
@@ -26,7 +26,6 @@ function initGallery() {
       <a href="${item.src}" data-lightbox="gallery-${item.category}" data-title="${item.title}" data-category="${item.category}">
         <img src="${item.thumb}" alt="${item.title}" loading="lazy">
       </a>
-      <div class="photo-title">${item.title}</div>
     `;
 
     gallery.appendChild(galleryItem);
@@ -42,17 +41,19 @@ function initGallery() {
 
       // Start transition
       gallery.classList.add("hidden");
-      
+
       // Wait for fade-out to complete
       setTimeout(() => {
         // Update active button
-        document.querySelectorAll(".filter-btn").forEach((b) => 
-          b.classList.remove("active"));
+        document
+          .querySelectorAll(".filter-btn")
+          .forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
 
         // Filter items
         document.querySelectorAll(".gallery-item").forEach((item) => {
-          item.style.display = item.dataset.category === filter ? "block" : "none";
+          item.style.display =
+            item.dataset.category === filter ? "block" : "none";
         });
 
         // Re-init Lightbox for new category
@@ -74,9 +75,10 @@ function initGallery() {
       albumLabel: "",
       alwaysShowNavOnTouchDevices: true,
       filter: function () {
-        const activeCategory = document.querySelector(".filter-btn.active")?.dataset.filter;
+        const activeCategory =
+          document.querySelector(".filter-btn.active")?.dataset.filter;
         return $(this).data("category") === activeCategory;
-      }
+      },
     });
 
     // Store original Lightbox init function
@@ -84,9 +86,10 @@ function initGallery() {
 
     // Override Lightbox init to filter images by category
     lightbox.init = function (selector) {
-      const activeCategory = document.querySelector(".filter-btn.active")?.dataset.filter;
-      const filteredSelector = activeCategory 
-        ? `${selector}[data-category="${activeCategory}"]` 
+      const activeCategory =
+        document.querySelector(".filter-btn.active")?.dataset.filter;
+      const filteredSelector = activeCategory
+        ? `${selector}[data-category="${activeCategory}"]`
         : selector;
       originalInit.call(this, filteredSelector);
     };

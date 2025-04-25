@@ -220,11 +220,11 @@ body.dark-mode .contact-page {
   display: block;
 }
 
-.photo-title {
+/* .photo-title {
   padding: 8px;
   text-align: center;
   font-size: 0.9rem;
-}
+} */
 
 /* ========== GALLERY CONTROLLS ========== */
 .gallery-controls {
