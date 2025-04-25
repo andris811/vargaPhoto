@@ -154,7 +154,8 @@ This project is open source and free to use for educational or personal purposes
 
 ## 🖼️ Screenshots
 
-![Website Screenshot](./assets/screenshots/screenshot.png)
+![Website Screenshot](./assets/screenshots/screenshot_1.png)
+![Website Screenshot](./assets/screenshots/screenshot_2.png)
 
 
 ## 🔖 Tags
