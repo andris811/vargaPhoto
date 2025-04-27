@@ -186,6 +186,8 @@ body.dark-mode .contact-page {
   padding: 1rem;
   opacity: 1;
   transition: opacity 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+  pointer-events: auto;
 }
 
 .gallery.hidden {
@@ -209,22 +211,17 @@ body.dark-mode .contact-page {
   display: block;
 }
 
-.gallery-item:hover {
-  transform: scale(1.02);
-}
-
 .gallery-item img {
   width: 100%;
   height: 250px;
   object-fit: cover;
   display: block;
+  transition: transform 0.4s ease;
 }
 
-/* .photo-title {
-  padding: 8px;
-  text-align: center;
-  font-size: 0.9rem;
-} */
+.gallery-item:hover img {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
 
 /* ========== GALLERY CONTROLLS ========== */
 .gallery-controls {
