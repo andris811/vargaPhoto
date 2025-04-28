@@ -20,52 +20,55 @@
     />
   </head>
   <body>
-    <div id="navbar-container"></div>
-    <div class="content-wrapper">
-      <header>
-        <h1 class="header" data-translate="galleryTitle"></h1>
-        <div class="gallery-controls">
-          <button
-            class="filter-btn"
-            data-filter="nature"
-            data-translate="filters.nature"
-          ></button>
-          <button
-            class="filter-btn"
-            data-filter="portrait"
-            data-translate="filters.portrait"
-          ></button>
-          <button
-            class="filter-btn"
-            data-filter="landscape"
-            data-translate="filters.landscape"
-          ></button>
-          <button
-            class="filter-btn"
-            data-filter="city"
-            data-translate="filters.city"
-          ></button>
-          <button
-            class="filter-btn"
-            data-filter="film"
-            data-translate="filters.film"
-          ></button>
-          <button
-            class="filter-btn"
-            data-filter="bw"
-            data-translate="filters.bw"
-          ></button>
-        </div>
-      </header>
-      <main>
-        <div class="gallery" id="gallery"></div>
-      </main>
+    <div class="wrapper">
+      <div id="navbar-container"></div>
+      <div class="content-wrapper">
+        <header>
+          <h1 class="header" data-translate="galleryTitle"></h1>
+          <div class="gallery-controls">
+            <button
+              class="filter-btn"
+              data-filter="nature"
+              data-translate="filters.nature"
+            ></button>
+            <button
+              class="filter-btn"
+              data-filter="portrait"
+              data-translate="filters.portrait"
+            ></button>
+            <button
+              class="filter-btn"
+              data-filter="landscape"
+              data-translate="filters.landscape"
+            ></button>
+            <button
+              class="filter-btn"
+              data-filter="city"
+              data-translate="filters.city"
+            ></button>
+            <button
+              class="filter-btn"
+              data-filter="film"
+              data-translate="filters.film"
+            ></button>
+            <button
+              class="filter-btn"
+              data-filter="bw"
+              data-translate="filters.bw"
+            ></button>
+          </div>
+        </header>
+        <main>
+          <div class="gallery" id="gallery"></div>
+        </main>
+      </div>
+
+      <div id="footer-placeholder"></div>
     </div>
+
     <button id="back-to-top" title="Go to top">
       <i class="bi bi-chevron-up"></i>
     </button>
-
-    <div id="footer-placeholder"></div>
     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
     <script type="module" src="js/gallery.js"></script>
     <script src="js/navbar.js"></script>
