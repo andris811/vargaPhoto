@@ -107,4 +107,23 @@ document.addEventListener("contextmenu", function (e) {
 });
 
 // Initialize when DOM is ready
-document.addEventListener("DOMContentLoaded", initGallery);
+document.addEventListener("DOMContentLoaded", () => {
+  initGallery();
+
+ // --- Add scroll locking directly into Lightbox methods ---
+ if (window.lightbox) {
+  const originalStart = lightbox.start;
+  const originalEnd = lightbox.end;
+
+  lightbox.start = function (...args) {
+    document.body.style.overflow = 'hidden'; // ✨ lock scroll
+    originalStart.apply(this, args);
+  };
+
+  lightbox.end = function (...args) {
+    document.body.style.overflow = ''; // ✨ unlock scroll
+    originalEnd.apply(this, args);
+  };
+}
+  
+});
