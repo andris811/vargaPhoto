@@ -371,8 +371,9 @@ button:hover {
 footer {
   text-align: center;
   padding: 1.5rem 1rem;
-  background-color: #222;
-  color: white;
+  background-color: #f9f9f9;
+  color: #333;
+  border-top: 1px solid #ccc;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -383,19 +384,34 @@ footer {
 }
 
 footer a {
-  color: #bbb;
+  color: #666;
   text-decoration: none;
   margin: 0 5px;
   transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: white;
+  color: #000;
 }
 
 footer i {
   font-size: 1.2rem;
   vertical-align: middle;
+}
+
+/* ========== FOOTER DARK MODE ========== */
+body.dark-mode footer {
+  background-color: #222;
+  color: white;
+  border: none;
+}
+
+body.dark-mode footer a {
+  color: #bbb;
+}
+
+body.dark-mode footer a:hover {
+  color: #fff;
 }
 
 /* ========== LANGUAGE SWITCHER ========== */
@@ -736,10 +752,10 @@ body.dark-mode .social-link:hover {
 
   #nav-links {
     position: fixed;
-    top: 0;
+    top: 92px;
     right: 0;
     width: 50vw;
-    height: 100vh;
+    height: 71vh;
     background: #f9f9f9;
     flex-direction: column;
     justify-content: center;
@@ -751,6 +767,7 @@ body.dark-mode .social-link:hover {
     z-index: 999;
     max-width: 100vw;
     overflow-x: hidden;
+    border-radius: 8px 0 0 8px;
   }
 
   #nav-links.active {
