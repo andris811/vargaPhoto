@@ -5,84 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Varga Photography</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="wrapper">
       <div id="navbar-container"></div>
       <main class="contact-page">
-        <section class="about-me">
-          <h2 data-translate="aboutTitle">📸 About Me</h2>
-          <p data-translate="aboutText"></p>
-        </section>
-        <section class="social-media">
-          <h3 data-translate="find-me">🌐 Connect with Me</h3>
-          <ul class="social-links">
-            <li>
-              <a
-                href="https://www.instagram.com/andris811"
-                target="_blank"
-                rel="noopener"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.flickr.com/photos/202676501@N05/"
-                target="_blank"
-                rel="noopener"
-                >Flickr</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://500px.com/p/andris811"
-                target="_blank"
-                rel="noopener"
-                >500px</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.xiaohongshu.com/user/profile/5f1fa802000000000100019f"
-                target="_blank"
-                rel="noopener"
-                >Red（小红书）</a
-              >
-            </li>
-          </ul>
-        </section>
-        <section class="contact-form">
-          <header>
-            <h1 class="header" data-translate="contactTitle">Contact Me</h1>
-          </header>
-          <form action="https://formspree.io/f/mrbpobdy" method="POST">
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              data-translate="namePlaceholder"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              data-translate="emailPlaceholder"
-              required
-            />
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Your Message"
-              data-translate="messagePlaceholder"
-              required
-            ></textarea>
-            <button type="submit" data-translate="sendButton">Send</button>
-          </form>
-        </section>
+        <div class="contact-left">
+          <section class="about-me">
+            <h2 data-translate="aboutTitle">📸 About Me</h2>
+            <p data-translate="aboutText"></p>
+          </section>
+          <section class="social-media">
+            <h3 data-translate="find-me" class="social-title">Find me here:</h3>
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://www.instagram.com/andris811"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.flickr.com/photos/202676501@N05/"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link"
+                >
+                  <i class="fab fa-flickr"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://500px.com/p/andris811"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link"
+                >
+                  <i class="fab fa-500px"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.xiaohongshu.com/user/profile/5f1fa802000000000100019f"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link"
+                >
+                  <i class="fa-solid fa-book-open"></i>
+                  <span>redNote</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="contact-right">
+          <section class="contact-form">
+            <header>
+              <h1 class="header" data-translate="contactTitle">
+                Or send me a message
+              </h1>
+            </header>
+            <form action="https://formspree.io/f/mrbpobdy" method="POST">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                data-translate="namePlaceholder"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                data-translate="emailPlaceholder"
+                required
+              />
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                data-translate="messagePlaceholder"
+                required
+              ></textarea>
+              <button type="submit" data-translate="sendButton">Send</button>
+            </form>
+          </section>
+        </div>
       </main>
-      <button id="back-to-top" title="Go to top"><i class="bi bi-chevron-up"></i></button>
+      <button id="back-to-top" title="Go to top">
+        <i class="bi bi-chevron-up"></i>
+      </button>
       <div id="footer-placeholder"></div>
     </div>
     <script src="js/navbar.js"></script>

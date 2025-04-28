@@ -21,9 +21,10 @@ html, body {
 }
 
 .wrapper {
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  
 }
 
 /* * {
@@ -158,24 +159,46 @@ nav a {
 }
 
 .contact-page {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
   padding: 2rem;
   margin: 2rem auto;
-  max-width: 800px;
+  max-width: 1200px; /* make it wider for two sides */
   border-radius: 12px;
-  background-color: #f3f3f3; /* Light mode default */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  flex: 1;
-}
-/* Dark mode */
-body.dark-mode .contact-page {
-  background-color: #222;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
 }
 
-.about-me,
-.social-media,
-.contact-form {
-  margin-bottom: 3rem;
+/* Left container for about me and social */
+.contact-left {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Right container for contact form */
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Card-like backgrounds */
+.about-me, .social-media, .contact-form {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark mode for the cards */
+body.dark-mode .about-me,
+body.dark-mode .social-media,
+body.dark-mode .contact-form {
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
 }
 
 /* ========== GALLERY ========== */
@@ -201,7 +224,6 @@ body.dark-mode .contact-page {
   position: relative;
   overflow: hidden;
   opacity: 1;
-  transform: scale(1);
   transition: opacity 0.4s ease, transform 0.4s ease;
   pointer-events: auto;
 }
@@ -279,8 +301,9 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1rem;
-  max-width: 600px;
+  /* padding: 1rem; */
+  width: 100%;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -290,6 +313,15 @@ textarea {
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+  overflow-y: auto;
 }
 
 button {
@@ -472,19 +504,55 @@ input:checked + .slider:before {
 
 
 /* ========== SOCIAL LINKS ========== */
+.social-media {
+  text-align: center;
+}
+
+.social-title {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
 .social-links {
   list-style: none;
   padding: 0;
+  margin: 2rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.social-links li {
-  margin: 0.5rem 0;
-}
-
-.social-links a {
-  color: var(--accent-color);
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-link i {
+  font-size: 1.5rem;
+}
+
+.social-link:hover {
+  color: #555;
+}
+
+/* Dark mode */
+body.dark-mode .social-media {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .social-link {
+  color: #fff;
+}
+
+body.dark-mode .social-link:hover {
+  color: #aaa;
 }
 
 /* ========== BACK TO TOP BUTTON ========== */
@@ -537,12 +605,6 @@ input:checked + .slider:before {
     font-size: 1rem;
   }
 
-  /* .gallery {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 1rem;
-    gap: 10px;
-  } */
-
   .gallery-controls {
     gap: 6px;
   }
@@ -590,8 +652,6 @@ input:checked + .slider:before {
     max-width: 100vw;
     overflow-x: hidden;
   }
-
-  
   
   #nav-links.active {
     transform: translateX(0);
@@ -636,11 +696,35 @@ input:checked + .slider:before {
   .language-switch button:hover {
     background-color: #eee;
   }
+
+  .social-media {
+    margin-bottom: 2rem;
+  }
+  
+  .social-links {
+    margin: 1rem 0;
+  }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 380px) {
   .gallery {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .social-links {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .social-link {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+  
+  .social-link i {
+    font-size: 1rem;
   }
 }
 

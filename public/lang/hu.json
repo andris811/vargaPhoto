@@ -9,7 +9,7 @@
   "introTitle": "Üdvözöllek a világomban",
   "introText": "Sziasztok! Szenvedélyes utazó és természetkedvelő vagyok, aki egyedi pillanatokat és lenyűgöző tájakat örökít meg a világ minden tájáról. Ez a weboldal a személyes kiállításom, ahol minden fotó egy történetet mesél el. Fedezd fel!",
   "galleryTitle": "Galéria",
-  "contactTitle": "Kapcsolat",
+  "contactTitle": "Vagy küldj egy üzenetet:",
   "namePlaceholder": "Neved",
   "emailPlaceholder": "Email címed",
   "messagePlaceholder": "Üzeneted",
@@ -17,7 +17,7 @@
   "copyright": "© {year} Varga Photography",
   "aboutTitle": "📸 Rólam",
   "aboutText": "Sziasztok! Sanghajban élek, és szenvedélyesen szeretek utazási és természetfotókat készíteni. Fujifilm X-T30 fényképezőgépet, különféle fix és zoom objektíveket, valamint egy Ricoh GR3x-et használok. Legyen szó városi hangulatról vagy távoli tájakról, mindig a fény és a történetmesélés pillanatait keresem a lencsémen keresztül.",
-  "find-me": "🌐 Megtalálhatsz az alábbi helyeken:",
+  "find-me": "Megtalálhatsz az alábbi platformokon:",
   "filters": {
     "nature": "Természet",
     "portrait": "Portré",
