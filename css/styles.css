@@ -477,6 +477,7 @@ body.dark-mode footer a:hover {
   background: #333;
   margin: 4px 0;
   transition: all 0.3s ease;
+  transform-origin: center;
 }
 
 #overlay {
@@ -781,17 +782,22 @@ body.dark-mode .social-link:hover {
     width: 100%;
   }
 
-  .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+  .hamburger.active span {
+    margin: 0;
   }
-
+  
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  
   .hamburger.active span:nth-child(2) {
     opacity: 0;
   }
-
+  
   .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px);
+    transform: rotate(-45deg) translate(3px, -3px);
   }
+  
 
   .language-switcher {
     display: flex;
@@ -838,10 +844,6 @@ body.dark-mode .social-link:hover {
   .social-link {
     padding: 0.6rem;
     font-size: 0.85rem;
-  }
-
-  .social-link i {
-    font-size: 1rem;
   }
 
   .logo-text {
