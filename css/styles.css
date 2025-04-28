@@ -368,13 +368,9 @@ button:hover {
 }
 
 /* ========== FOOTER ========== */
-#footer-placeholder {
-  flex-shrink: 0;
-}
-
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   background-color: #222;
   color: white;
   position: relative;
@@ -383,6 +379,23 @@ footer {
   margin-top: 2rem;
   max-width: 100%;
   box-sizing: border-box;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #bbb;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer i {
+  font-size: 1.2rem;
+  vertical-align: middle;
 }
 
 /* ========== LANGUAGE SWITCHER ========== */

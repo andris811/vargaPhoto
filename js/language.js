@@ -16,7 +16,7 @@ const translations = {
     emailPlaceholder: "Your Email",
     messagePlaceholder: "Your Message",
     sendButton: "Send",
-    copyright: "© {year} Varga Photography"
+    copyright: "© {year} <a href='https://yourportfolio.com' target='_blank'>Varga Andras</a> | <a href='https://www.linkedin.com/in/yourlinkedinprofile' target='_blank'><i class='bi bi-linkedin'></i></a><br>Designed & Developed with ❤️ by Varga Andras"
   },
   hu: {
     siteTitle: "Varga Fotó",
@@ -34,7 +34,7 @@ const translations = {
     emailPlaceholder: "Email címed",
     messagePlaceholder: "Üzeneted",
     sendButton: "Küldés",
-    copyright: "© {year} Varga Fotó"
+    copyright: "© {year} <a href='https://yourportfolio.com' target='_blank'>Varga Andras</a> | <a href='https://www.linkedin.com/in/yourlinkedinprofile' target='_blank'><i class='bi bi-linkedin'></i></a><br>Designed & Developed with ❤️ by Varga Andras"
   },
   zh: {
     siteTitle: "瓦尔加摄影",
@@ -52,7 +52,7 @@ const translations = {
     emailPlaceholder: "您的邮箱",
     messagePlaceholder: "您的留言",
     sendButton: "发送",
-    copyright: "© {year} 瓦尔加摄影"
+    copyright: "© {year} <a href='https://yourportfolio.com' target='_blank'>Varga Andras</a> | <a href='https://www.linkedin.com/in/yourlinkedinprofile' target='_blank'><i class='bi bi-linkedin'></i></a><br>Designed & Developed with ❤️ by Varga Andras"
   }
 };
 
@@ -114,7 +114,7 @@ async function changeLanguage(lang) {
     // 6. Update copyright
     const year = new Date().getFullYear();
     document.querySelectorAll('footer p').forEach(el => {
-      el.textContent = langData.copyright?.replace('{year}', year) || `© ${year} Varga Photography`;
+      el.innerHTML = langData.copyright?.replace('{year}', year) || `© ${year} Varga Photography`;
     });
 
   } catch (error) {
