@@ -1,33 +1,72 @@
-  <nav class="navbar">
-    <div class="logo">
-      <a href="index.html" class="logo-link">
-        <img src="assets/logo.png" alt="Varga Photography Logo" class="logo-img">
-        <span class="logo-text" data-translate="navTitle">Varga Andras Photography</span>
-      </a>
+<nav class="navbar">
+  <div class="logo">
+    <a href="index.html" class="logo-link">
+      <img
+        src="assets/logo.png"
+        alt="Varga Photography Logo"
+        class="logo-img"
+      />
+      <span class="logo-text" data-translate="navTitle"
+        >Varga Andras Photography</span
+      >
+    </a>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div id="overlay"></div>
+  <ul class="nav-links" id="nav-links">
+    <li>
+      <a href="index.html" data-translate="navHome" aria-label="Home">Home</a>
+    </li>
+    <li>
+      <a href="gallery.html" data-translate="navGallery" aria-label="Gallery"
+        >Gallery</a
+      >
+    </li>
+    <li>
+      <a href="contact.html" data-translate="navContact" aria-label="Contact"
+        >Contact</a
+      >
+    </li>
+    <li class="nav-controlls">
+      <div class="language-switcher">
+        <button
+          class="language-option active"
+          data-lang="en"
+          aria-label="Switch to English"
+        >
+          EN
+        </button>
+        <button
+          class="language-option"
+          data-lang="hu"
+          aria-label="Switch to Hungarian"
+        >
+          HU
+        </button>
+        <button
+          class="language-option"
+          data-lang="zh"
+          aria-label="Switch to Chinese"
+        >
+          中文
+        </button>
+      </div>
+    </li>
+    <div class="theme-toggle">
+      <span
+        class="theme-label"
+        data-translate="theme.dark"
+        aria-label="Switch Theme"
+        >Dark Mode</span
+      >
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider round"></span>
+      </label>
     </div>
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div id="overlay"></div>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html" data-translate="navHome">Home</a></li>
-      <li><a href="gallery.html" data-translate="navGallery">Gallery</a></li>
-      <li><a href="contact.html" data-translate="navContact">Contact</a></li>
-      <li class="nav-controlls">
-        <div class="language-switcher">
-          <button class="language-option active" data-lang="en">EN</button>
-          <button class="language-option" data-lang="hu">HU</button>
-          <button class="language-option" data-lang="zh">中文</button>
-        </div>
-      </li>
-      <div class="theme-toggle">
-        <span class="theme-label" data-translate="theme.dark">Dark Mode</span>
-        <label class="switch">
-          <input type="checkbox" id="theme-toggle">
-          <span class="slider round"></span>
-        </label>
-      </div>    
-    </ul>
-  </nav>
+  </ul>
+</nav>
