@@ -1,0 +1,35 @@
+{
+  "siteTitle": "Varga Photography",
+  "navTitle": "Andras Varga Photography",
+  "navHome": "Home",
+  "navGallery": "Gallery",
+  "navContact": "Contact",
+  "heroTitle": "Varga Photography",
+  "heroDescription": "Exploring the beauty of travel and nature through my lens.",
+  "viewGallery": "View Gallery",
+  "introTitle": "Welcome to My World",
+  "introText": "Hello! I'm a passionate traveler and nature lover, capturing unique moments and breathtaking landscapes from around the world. This website is my personal showcase, where each photo tells a story. Dive in and explore!",
+  "galleryTitle": "Gallery",
+  "contactTitle": "Send me a message:",
+  "namePlaceholder": "Your Name",
+  "emailPlaceholder": "Your Email",
+  "messagePlaceholder": "Your Message",
+  "sendButton": "Send",
+  "copyright": "© {year} <a href='https://andrasvarga.dev/' target='_blank' data-tooltip='andrasvarga.dev'>AV Dev</a> | <a href='https://www.linkedin.com/in/andrasv89/' target='_blank' data-tooltip='LinkedIn'><i class='bi bi-linkedin'></i></a> | <a href='https://github.com/andris811' target='_blank' data-tooltip='GitHub'><i class='bi bi-github'></i></a><br>Designed & Developed with ❤️ by Andras Varga",
+  "aboutTitle": "📸 About Me",
+  "aboutText": "Hello! I'm based in Shanghai and passionate about capturing travel and nature scenes. I shoot with a Fujifilm X-T30 and a variety of prime and zoom lenses, as well as a Ricoh GR3x. Whether it’s city vibes or remote landscapes, I’m always chasing light and storytelling moments through the lens.",
+  "find-me": "Find me here:",
+  "redNoteTooltip": "redNote",
+  "filters": {
+    "nature": "Nature",
+    "portrait": "Portrait",
+    "landscape": "Landscape",
+    "street": "Street",
+    "film": "Film",
+    "other": "Other"
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode"
+  }
+}

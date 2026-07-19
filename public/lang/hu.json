@@ -1,0 +1,35 @@
+{
+  "siteTitle": "Varga Fotó",
+  "navTitle": "Varga András Photography",
+  "navHome": "Kezdőlap",
+  "navGallery": "Galéria",
+  "navContact": "Kapcsolat",
+  "heroTitle": "Varga Fotó",
+  "heroDescription": "Utazás és természet szépségének felfedezése a lencsém mögül.",
+  "viewGallery": "Galéria Megtekintése",
+  "introTitle": "Üdvözöllek a világomban",
+  "introText": "Sziasztok! Szenvedélyes utazó és természetkedvelő vagyok, aki egyedi pillanatokat és lenyűgöző tájakat örökít meg a világ minden tájáról. Ez a weboldal a személyes kiállításom, ahol minden fotó egy történetet mesél el. Fedezd fel!",
+  "galleryTitle": "Galéria",
+  "contactTitle": "Küldj egy üzenetet:",
+  "namePlaceholder": "Neved",
+  "emailPlaceholder": "Email címed",
+  "messagePlaceholder": "Üzeneted",
+  "sendButton": "Küldés",
+  "copyright": "© {year} <a href='https://andrasvarga.dev/' target='_blank' data-tooltip='andrasvarga.dev'>AV Dev</a> | <a href='https://www.linkedin.com/in/andrasv89/' target='_blank' data-tooltip='LinkedIn'><i class='bi bi-linkedin'></i></a> | <a href='https://github.com/andris811' target='_blank' data-tooltip='GitHub'><i class='bi bi-github'></i></a><br>Tervezte & Fejlesztette Varga András",
+  "aboutTitle": "📸 Rólam",
+  "aboutText": "Sziasztok! Sanghajban élek, és szenvedélyesen szeretek utazási és természetfotókat készíteni. Fujifilm X-T30 fényképezőgépet, különféle fix és zoom objektíveket, valamint egy Ricoh GR3x-et használok. Legyen szó városi hangulatról vagy távoli tájakról, mindig a fény és a történetmesélés pillanatait keresem a lencsémen keresztül.",
+  "find-me": "Megtalálhatsz az alábbi platformokon:",
+  "redNoteTooltip": "redNote",
+  "filters": {
+    "nature": "Természet",
+    "portrait": "Portré",
+    "landscape": "Tájkép",
+    "street": "Street",
+    "film": "Film",
+    "other": "Egyéb"
+  },
+  "theme": {
+    "dark": "Sötét mód",
+    "light": "Világos mód"
+  }
+}

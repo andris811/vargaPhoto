@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore the travel and nature photography of Andras Varga.">
+    <title>Varga Photography</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="navbar-container"></div>
+      <div class="content-wrapper">
+        <main>
+          <div class="gallery-controls">
+            <button class="filter-btn" data-filter="nature" data-translate="filters.nature">Nature</button>
+            <button class="filter-btn" data-filter="portrait" data-translate="filters.portrait">Portrait</button>
+            <button class="filter-btn" data-filter="landscape" data-translate="filters.landscape">Landscape</button>
+            <button class="filter-btn" data-filter="street" data-translate="filters.street">Street</button>
+            <button class="filter-btn" data-filter="film" data-translate="filters.film">Film</button>
+            <button class="filter-btn" data-filter="other" data-translate="filters.other">Other</button>
+          </div>
+          <div class="gallery" id="gallery"></div>
+        </main>
+      </div>
+
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <button id="back-to-top" title="Go to top">
+      <i class="bi bi-chevron-up"></i>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script type="module" src="js/gallery.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

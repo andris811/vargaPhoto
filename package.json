@@ -1,0 +1,15 @@
+{
+  "name": "varga-photography",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run update",
+    "start": "npx -y live-server --port=8000 --no-browser",
+    "thumbs": "node scripts/generate-thumbs.js",
+    "data": "node scripts/generate-data.js",
+    "update": "npm run thumbs && npm run data"
+  },
+  "dependencies": {
+    "lightbox2": "^2.11.5",
+    "fs-extra": "^11.0.0"
+  }
+}
