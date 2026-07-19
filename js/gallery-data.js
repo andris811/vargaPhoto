@@ -1,4 +1,4 @@
-// Auto-generated at 2026-07-19T16:44:22.740Z
+// Auto-generated at 2026-07-19T16:54:12.384Z
 const galleryData = [
   {
     src: "assets/images/nature/nature_1.jpg",
@@ -745,36 +745,6 @@ const galleryData = [
     title: "Street 124"
   },
   {
-    src: "assets/images/street/street_125.jpg",
-    thumb: "assets/images/street/thumbs/street_125.jpg",
-    category: "street",
-    title: "Street 125"
-  },
-  {
-    src: "assets/images/street/street_126.jpg",
-    thumb: "assets/images/street/thumbs/street_126.jpg",
-    category: "street",
-    title: "Street 126"
-  },
-  {
-    src: "assets/images/street/street_127.jpg",
-    thumb: "assets/images/street/thumbs/street_127.jpg",
-    category: "street",
-    title: "Street 127"
-  },
-  {
-    src: "assets/images/street/street_128.jpg",
-    thumb: "assets/images/street/thumbs/street_128.jpg",
-    category: "street",
-    title: "Street 128"
-  },
-  {
-    src: "assets/images/street/street_129.jpg",
-    thumb: "assets/images/street/thumbs/street_129.jpg",
-    category: "street",
-    title: "Street 129"
-  },
-  {
     src: "assets/images/street/street_13.jpg",
     thumb: "assets/images/street/thumbs/street_13.jpg",
     category: "street",
@@ -1321,10 +1291,28 @@ const galleryData = [
     title: "Street 95"
   },
   {
+    src: "assets/images/street/street_96.jpg",
+    thumb: "assets/images/street/thumbs/street_96.jpg",
+    category: "street",
+    title: "Street 96"
+  },
+  {
+    src: "assets/images/street/street_97.jpg",
+    thumb: "assets/images/street/thumbs/street_97.jpg",
+    category: "street",
+    title: "Street 97"
+  },
+  {
     src: "assets/images/street/street_98.jpg",
     thumb: "assets/images/street/thumbs/street_98.jpg",
     category: "street",
     title: "Street 98"
+  },
+  {
+    src: "assets/images/street/street_99.jpg",
+    thumb: "assets/images/street/thumbs/street_99.jpg",
+    category: "street",
+    title: "Street 99"
   },
   {
     src: "assets/images/film/film-1.jpg",
