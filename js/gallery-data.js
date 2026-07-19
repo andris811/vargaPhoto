@@ -1,4 +1,4 @@
-// Auto-generated at 2026-07-19T13:54:26.200Z
+// Auto-generated at 2026-07-19T16:44:22.740Z
 const galleryData = [
   {
     src: "assets/images/nature/nature_1.jpg",
@@ -143,12 +143,6 @@ const galleryData = [
     thumb: "assets/images/nature/thumbs/nature_30.jpg",
     category: "nature",
     title: "Nature 30"
-  },
-  {
-    src: "assets/images/nature/nature_31.jpg",
-    thumb: "assets/images/nature/thumbs/nature_31.jpg",
-    category: "nature",
-    title: "Nature 31"
   },
   {
     src: "assets/images/nature/nature_4.jpg",
@@ -1409,6 +1403,108 @@ const galleryData = [
     thumb: "assets/images/film/thumbs/film-9.jpg",
     category: "film",
     title: "Film 9"
+  },
+  {
+    src: "assets/images/other/other_1.jpg",
+    thumb: "assets/images/other/thumbs/other_1.jpg",
+    category: "other",
+    title: "Other 1"
+  },
+  {
+    src: "assets/images/other/other_10.jpg",
+    thumb: "assets/images/other/thumbs/other_10.jpg",
+    category: "other",
+    title: "Other 10"
+  },
+  {
+    src: "assets/images/other/other_11.jpg",
+    thumb: "assets/images/other/thumbs/other_11.jpg",
+    category: "other",
+    title: "Other 11"
+  },
+  {
+    src: "assets/images/other/other_12.jpg",
+    thumb: "assets/images/other/thumbs/other_12.jpg",
+    category: "other",
+    title: "Other 12"
+  },
+  {
+    src: "assets/images/other/other_13.jpg",
+    thumb: "assets/images/other/thumbs/other_13.jpg",
+    category: "other",
+    title: "Other 13"
+  },
+  {
+    src: "assets/images/other/other_14.jpg",
+    thumb: "assets/images/other/thumbs/other_14.jpg",
+    category: "other",
+    title: "Other 14"
+  },
+  {
+    src: "assets/images/other/other_15.jpg",
+    thumb: "assets/images/other/thumbs/other_15.jpg",
+    category: "other",
+    title: "Other 15"
+  },
+  {
+    src: "assets/images/other/other_16.jpg",
+    thumb: "assets/images/other/thumbs/other_16.jpg",
+    category: "other",
+    title: "Other 16"
+  },
+  {
+    src: "assets/images/other/other_17.jpg",
+    thumb: "assets/images/other/thumbs/other_17.jpg",
+    category: "other",
+    title: "Other 17"
+  },
+  {
+    src: "assets/images/other/other_2.jpg",
+    thumb: "assets/images/other/thumbs/other_2.jpg",
+    category: "other",
+    title: "Other 2"
+  },
+  {
+    src: "assets/images/other/other_3.jpg",
+    thumb: "assets/images/other/thumbs/other_3.jpg",
+    category: "other",
+    title: "Other 3"
+  },
+  {
+    src: "assets/images/other/other_4.jpg",
+    thumb: "assets/images/other/thumbs/other_4.jpg",
+    category: "other",
+    title: "Other 4"
+  },
+  {
+    src: "assets/images/other/other_5.jpg",
+    thumb: "assets/images/other/thumbs/other_5.jpg",
+    category: "other",
+    title: "Other 5"
+  },
+  {
+    src: "assets/images/other/other_6.jpg",
+    thumb: "assets/images/other/thumbs/other_6.jpg",
+    category: "other",
+    title: "Other 6"
+  },
+  {
+    src: "assets/images/other/other_7.jpg",
+    thumb: "assets/images/other/thumbs/other_7.jpg",
+    category: "other",
+    title: "Other 7"
+  },
+  {
+    src: "assets/images/other/other_8.jpg",
+    thumb: "assets/images/other/thumbs/other_8.jpg",
+    category: "other",
+    title: "Other 8"
+  },
+  {
+    src: "assets/images/other/other_9.jpg",
+    thumb: "assets/images/other/thumbs/other_9.jpg",
+    category: "other",
+    title: "Other 9"
   },
 ];
 
