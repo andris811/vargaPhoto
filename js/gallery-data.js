@@ -1,4 +1,4 @@
-// Auto-generated at 2026-07-19T16:54:12.384Z
+// Auto-generated at 2026-07-20T03:11:19.868Z
 const galleryData = [
   {
     src: "assets/images/nature/nature_1.jpg",
@@ -725,24 +725,6 @@ const galleryData = [
     thumb: "assets/images/street/thumbs/street_121.jpg",
     category: "street",
     title: "Street 121"
-  },
-  {
-    src: "assets/images/street/street_122.jpg",
-    thumb: "assets/images/street/thumbs/street_122.jpg",
-    category: "street",
-    title: "Street 122"
-  },
-  {
-    src: "assets/images/street/street_123.jpg",
-    thumb: "assets/images/street/thumbs/street_123.jpg",
-    category: "street",
-    title: "Street 123"
-  },
-  {
-    src: "assets/images/street/street_124.jpg",
-    thumb: "assets/images/street/thumbs/street_124.jpg",
-    category: "street",
-    title: "Street 124"
   },
   {
     src: "assets/images/street/street_13.jpg",
