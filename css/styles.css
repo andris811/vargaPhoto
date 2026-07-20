@@ -1297,3 +1297,13 @@ body.dark-mode .lb-container {
     height: 28px;
   }
 }
+
+.desktop-break {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop-break {
+    display: block;
+  }
+}

@@ -45,7 +45,7 @@ const translations = {
     heroDescription: "通过我的镜头探索旅行和自然的美丽。",
     viewGallery: "查看画廊",
     introTitle: "欢迎来到我的世界",
-    introText: "你好！我是一个充满激情的旅行者和自然爱好者，捕捉来自世界各地的独特时刻和令人叹为观止的风景。这个网站是我的个人展示，每张照片都讲述一个故事。快来探索吧！",
+    introText: "你好！我是一个充满激情的旅行者和自然爱好者，捕捉来自世界各地的独特时刻和令人叹为观止的风景。这个网站是我的个人展示，每张照片都讲述一个故事。<br class=\"desktop-break\">快来探索吧！",
     galleryTitle: "画廊",
     contactTitle: "联系我",
     namePlaceholder: "您的姓名",
@@ -79,7 +79,7 @@ async function changeLanguage(lang) {
         if (el.placeholder) {
           el.placeholder = translation;
         } else {
-          el.textContent = translation;
+          el.innerHTML = translation;
         }
       }
     });
