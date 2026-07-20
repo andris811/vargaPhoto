@@ -1,10 +1,58 @@
-// Auto-generated at 2026-07-20T03:11:19.868Z
+// Auto-generated at 2026-07-20T03:52:30.369Z
 const galleryData = [
   {
     src: "assets/images/nature/nature_1.jpg",
     thumb: "assets/images/nature/thumbs/nature_1.jpg",
     category: "nature",
     title: "Nature 1"
+  },
+  {
+    src: "assets/images/nature/nature_2.jpg",
+    thumb: "assets/images/nature/thumbs/nature_2.jpg",
+    category: "nature",
+    title: "Nature 2"
+  },
+  {
+    src: "assets/images/nature/nature_3.jpg",
+    thumb: "assets/images/nature/thumbs/nature_3.jpg",
+    category: "nature",
+    title: "Nature 3"
+  },
+  {
+    src: "assets/images/nature/nature_4.jpg",
+    thumb: "assets/images/nature/thumbs/nature_4.jpg",
+    category: "nature",
+    title: "Nature 4"
+  },
+  {
+    src: "assets/images/nature/nature_5.jpg",
+    thumb: "assets/images/nature/thumbs/nature_5.jpg",
+    category: "nature",
+    title: "Nature 5"
+  },
+  {
+    src: "assets/images/nature/nature_6.jpg",
+    thumb: "assets/images/nature/thumbs/nature_6.jpg",
+    category: "nature",
+    title: "Nature 6"
+  },
+  {
+    src: "assets/images/nature/nature_7.jpg",
+    thumb: "assets/images/nature/thumbs/nature_7.jpg",
+    category: "nature",
+    title: "Nature 7"
+  },
+  {
+    src: "assets/images/nature/nature_8.jpg",
+    thumb: "assets/images/nature/thumbs/nature_8.jpg",
+    category: "nature",
+    title: "Nature 8"
+  },
+  {
+    src: "assets/images/nature/nature_9.jpg",
+    thumb: "assets/images/nature/thumbs/nature_9.jpg",
+    category: "nature",
+    title: "Nature 9"
   },
   {
     src: "assets/images/nature/nature_10.jpg",
@@ -19,58 +67,16 @@ const galleryData = [
     title: "Nature 11"
   },
   {
-    src: "assets/images/nature/nature_12.jpg",
-    thumb: "assets/images/nature/thumbs/nature_12.jpg",
-    category: "nature",
-    title: "Nature 12"
-  },
-  {
     src: "assets/images/nature/nature_13.jpg",
     thumb: "assets/images/nature/thumbs/nature_13.jpg",
     category: "nature",
     title: "Nature 13"
   },
   {
-    src: "assets/images/nature/nature_14.jpg",
-    thumb: "assets/images/nature/thumbs/nature_14.jpg",
-    category: "nature",
-    title: "Nature 14"
-  },
-  {
-    src: "assets/images/nature/nature_15.jpg",
-    thumb: "assets/images/nature/thumbs/nature_15.jpg",
-    category: "nature",
-    title: "Nature 15"
-  },
-  {
-    src: "assets/images/nature/nature_16.jpg",
-    thumb: "assets/images/nature/thumbs/nature_16.jpg",
-    category: "nature",
-    title: "Nature 16"
-  },
-  {
-    src: "assets/images/nature/nature_17.jpg",
-    thumb: "assets/images/nature/thumbs/nature_17.jpg",
-    category: "nature",
-    title: "Nature 17"
-  },
-  {
     src: "assets/images/nature/nature_18.jpg",
     thumb: "assets/images/nature/thumbs/nature_18.jpg",
     category: "nature",
     title: "Nature 18"
-  },
-  {
-    src: "assets/images/nature/nature_19.jpg",
-    thumb: "assets/images/nature/thumbs/nature_19.jpg",
-    category: "nature",
-    title: "Nature 19"
-  },
-  {
-    src: "assets/images/nature/nature_2.jpg",
-    thumb: "assets/images/nature/thumbs/nature_2.jpg",
-    category: "nature",
-    title: "Nature 2"
   },
   {
     src: "assets/images/nature/nature_20.jpg",
@@ -133,58 +139,58 @@ const galleryData = [
     title: "Nature 29"
   },
   {
-    src: "assets/images/nature/nature_3.jpg",
-    thumb: "assets/images/nature/thumbs/nature_3.jpg",
-    category: "nature",
-    title: "Nature 3"
-  },
-  {
     src: "assets/images/nature/nature_30.jpg",
     thumb: "assets/images/nature/thumbs/nature_30.jpg",
     category: "nature",
     title: "Nature 30"
   },
   {
-    src: "assets/images/nature/nature_4.jpg",
-    thumb: "assets/images/nature/thumbs/nature_4.jpg",
-    category: "nature",
-    title: "Nature 4"
-  },
-  {
-    src: "assets/images/nature/nature_5.jpg",
-    thumb: "assets/images/nature/thumbs/nature_5.jpg",
-    category: "nature",
-    title: "Nature 5"
-  },
-  {
-    src: "assets/images/nature/nature_6.jpg",
-    thumb: "assets/images/nature/thumbs/nature_6.jpg",
-    category: "nature",
-    title: "Nature 6"
-  },
-  {
-    src: "assets/images/nature/nature_7.jpg",
-    thumb: "assets/images/nature/thumbs/nature_7.jpg",
-    category: "nature",
-    title: "Nature 7"
-  },
-  {
-    src: "assets/images/nature/nature_8.jpg",
-    thumb: "assets/images/nature/thumbs/nature_8.jpg",
-    category: "nature",
-    title: "Nature 8"
-  },
-  {
-    src: "assets/images/nature/nature_9.jpg",
-    thumb: "assets/images/nature/thumbs/nature_9.jpg",
-    category: "nature",
-    title: "Nature 9"
-  },
-  {
     src: "assets/images/portrait/portrait_1.jpg",
     thumb: "assets/images/portrait/thumbs/portrait_1.jpg",
     category: "portrait",
     title: "Portrait 1"
+  },
+  {
+    src: "assets/images/portrait/portrait_3.jpg",
+    thumb: "assets/images/portrait/thumbs/portrait_3.jpg",
+    category: "portrait",
+    title: "Portrait 3"
+  },
+  {
+    src: "assets/images/portrait/portrait_4.jpg",
+    thumb: "assets/images/portrait/thumbs/portrait_4.jpg",
+    category: "portrait",
+    title: "Portrait 4"
+  },
+  {
+    src: "assets/images/portrait/portrait_5.jpg",
+    thumb: "assets/images/portrait/thumbs/portrait_5.jpg",
+    category: "portrait",
+    title: "Portrait 5"
+  },
+  {
+    src: "assets/images/portrait/portrait_6.jpg",
+    thumb: "assets/images/portrait/thumbs/portrait_6.jpg",
+    category: "portrait",
+    title: "Portrait 6"
+  },
+  {
+    src: "assets/images/portrait/portrait_7.jpg",
+    thumb: "assets/images/portrait/thumbs/portrait_7.jpg",
+    category: "portrait",
+    title: "Portrait 7"
+  },
+  {
+    src: "assets/images/portrait/portrait_8.jpg",
+    thumb: "assets/images/portrait/thumbs/portrait_8.jpg",
+    category: "portrait",
+    title: "Portrait 8"
+  },
+  {
+    src: "assets/images/portrait/portrait_9.jpg",
+    thumb: "assets/images/portrait/thumbs/portrait_9.jpg",
+    category: "portrait",
+    title: "Portrait 9"
   },
   {
     src: "assets/images/portrait/portrait_10.jpg",
@@ -235,58 +241,94 @@ const galleryData = [
     title: "Portrait 17"
   },
   {
-    src: "assets/images/portrait/portrait_2.jpg",
-    thumb: "assets/images/portrait/thumbs/portrait_2.jpg",
+    src: "assets/images/portrait/portrait_18.jpg",
+    thumb: "assets/images/portrait/thumbs/portrait_18.jpg",
     category: "portrait",
-    title: "Portrait 2"
+    title: "Portrait 18"
   },
   {
-    src: "assets/images/portrait/portrait_3.jpg",
-    thumb: "assets/images/portrait/thumbs/portrait_3.jpg",
+    src: "assets/images/portrait/portrait_19.jpg",
+    thumb: "assets/images/portrait/thumbs/portrait_19.jpg",
     category: "portrait",
-    title: "Portrait 3"
+    title: "Portrait 19"
   },
   {
-    src: "assets/images/portrait/portrait_4.jpg",
-    thumb: "assets/images/portrait/thumbs/portrait_4.jpg",
+    src: "assets/images/portrait/portrait_20.jpg",
+    thumb: "assets/images/portrait/thumbs/portrait_20.jpg",
     category: "portrait",
-    title: "Portrait 4"
+    title: "Portrait 20"
   },
   {
-    src: "assets/images/portrait/portrait_5.jpg",
-    thumb: "assets/images/portrait/thumbs/portrait_5.jpg",
+    src: "assets/images/portrait/portrait_21.jpg",
+    thumb: "assets/images/portrait/thumbs/portrait_21.jpg",
     category: "portrait",
-    title: "Portrait 5"
+    title: "Portrait 21"
   },
   {
-    src: "assets/images/portrait/portrait_6.jpg",
-    thumb: "assets/images/portrait/thumbs/portrait_6.jpg",
+    src: "assets/images/portrait/portrait_22.jpg",
+    thumb: "assets/images/portrait/thumbs/portrait_22.jpg",
     category: "portrait",
-    title: "Portrait 6"
+    title: "Portrait 22"
   },
   {
-    src: "assets/images/portrait/portrait_7.jpg",
-    thumb: "assets/images/portrait/thumbs/portrait_7.jpg",
+    src: "assets/images/portrait/portrait_23.jpg",
+    thumb: "assets/images/portrait/thumbs/portrait_23.jpg",
     category: "portrait",
-    title: "Portrait 7"
-  },
-  {
-    src: "assets/images/portrait/portrait_8.jpg",
-    thumb: "assets/images/portrait/thumbs/portrait_8.jpg",
-    category: "portrait",
-    title: "Portrait 8"
-  },
-  {
-    src: "assets/images/portrait/portrait_9.jpg",
-    thumb: "assets/images/portrait/thumbs/portrait_9.jpg",
-    category: "portrait",
-    title: "Portrait 9"
+    title: "Portrait 23"
   },
   {
     src: "assets/images/landscape/landscape_1.jpg",
     thumb: "assets/images/landscape/thumbs/landscape_1.jpg",
     category: "landscape",
     title: "Landscape 1"
+  },
+  {
+    src: "assets/images/landscape/landscape_2.jpg",
+    thumb: "assets/images/landscape/thumbs/landscape_2.jpg",
+    category: "landscape",
+    title: "Landscape 2"
+  },
+  {
+    src: "assets/images/landscape/landscape_3.jpg",
+    thumb: "assets/images/landscape/thumbs/landscape_3.jpg",
+    category: "landscape",
+    title: "Landscape 3"
+  },
+  {
+    src: "assets/images/landscape/landscape_4.jpg",
+    thumb: "assets/images/landscape/thumbs/landscape_4.jpg",
+    category: "landscape",
+    title: "Landscape 4"
+  },
+  {
+    src: "assets/images/landscape/landscape_5.jpg",
+    thumb: "assets/images/landscape/thumbs/landscape_5.jpg",
+    category: "landscape",
+    title: "Landscape 5"
+  },
+  {
+    src: "assets/images/landscape/landscape_6.jpg",
+    thumb: "assets/images/landscape/thumbs/landscape_6.jpg",
+    category: "landscape",
+    title: "Landscape 6"
+  },
+  {
+    src: "assets/images/landscape/landscape_7.jpg",
+    thumb: "assets/images/landscape/thumbs/landscape_7.jpg",
+    category: "landscape",
+    title: "Landscape 7"
+  },
+  {
+    src: "assets/images/landscape/landscape_8.jpg",
+    thumb: "assets/images/landscape/thumbs/landscape_8.jpg",
+    category: "landscape",
+    title: "Landscape 8"
+  },
+  {
+    src: "assets/images/landscape/landscape_9.jpg",
+    thumb: "assets/images/landscape/thumbs/landscape_9.jpg",
+    category: "landscape",
+    title: "Landscape 9"
   },
   {
     src: "assets/images/landscape/landscape_10.jpg",
@@ -313,18 +355,6 @@ const galleryData = [
     title: "Landscape 13"
   },
   {
-    src: "assets/images/landscape/landscape_14.jpg",
-    thumb: "assets/images/landscape/thumbs/landscape_14.jpg",
-    category: "landscape",
-    title: "Landscape 14"
-  },
-  {
-    src: "assets/images/landscape/landscape_15.jpg",
-    thumb: "assets/images/landscape/thumbs/landscape_15.jpg",
-    category: "landscape",
-    title: "Landscape 15"
-  },
-  {
     src: "assets/images/landscape/landscape_16.jpg",
     thumb: "assets/images/landscape/thumbs/landscape_16.jpg",
     category: "landscape",
@@ -337,22 +367,10 @@ const galleryData = [
     title: "Landscape 17"
   },
   {
-    src: "assets/images/landscape/landscape_18.jpg",
-    thumb: "assets/images/landscape/thumbs/landscape_18.jpg",
-    category: "landscape",
-    title: "Landscape 18"
-  },
-  {
     src: "assets/images/landscape/landscape_19.jpg",
     thumb: "assets/images/landscape/thumbs/landscape_19.jpg",
     category: "landscape",
     title: "Landscape 19"
-  },
-  {
-    src: "assets/images/landscape/landscape_2.jpg",
-    thumb: "assets/images/landscape/thumbs/landscape_2.jpg",
-    category: "landscape",
-    title: "Landscape 2"
   },
   {
     src: "assets/images/landscape/landscape_20.jpg",
@@ -415,12 +433,6 @@ const galleryData = [
     title: "Landscape 29"
   },
   {
-    src: "assets/images/landscape/landscape_3.jpg",
-    thumb: "assets/images/landscape/thumbs/landscape_3.jpg",
-    category: "landscape",
-    title: "Landscape 3"
-  },
-  {
     src: "assets/images/landscape/landscape_30.jpg",
     thumb: "assets/images/landscape/thumbs/landscape_30.jpg",
     category: "landscape",
@@ -481,12 +493,6 @@ const galleryData = [
     title: "Landscape 39"
   },
   {
-    src: "assets/images/landscape/landscape_4.jpg",
-    thumb: "assets/images/landscape/thumbs/landscape_4.jpg",
-    category: "landscape",
-    title: "Landscape 4"
-  },
-  {
     src: "assets/images/landscape/landscape_40.jpg",
     thumb: "assets/images/landscape/thumbs/landscape_40.jpg",
     category: "landscape",
@@ -541,40 +547,58 @@ const galleryData = [
     title: "Landscape 48"
   },
   {
-    src: "assets/images/landscape/landscape_5.jpg",
-    thumb: "assets/images/landscape/thumbs/landscape_5.jpg",
-    category: "landscape",
-    title: "Landscape 5"
-  },
-  {
-    src: "assets/images/landscape/landscape_6.jpg",
-    thumb: "assets/images/landscape/thumbs/landscape_6.jpg",
-    category: "landscape",
-    title: "Landscape 6"
-  },
-  {
-    src: "assets/images/landscape/landscape_7.jpg",
-    thumb: "assets/images/landscape/thumbs/landscape_7.jpg",
-    category: "landscape",
-    title: "Landscape 7"
-  },
-  {
-    src: "assets/images/landscape/landscape_8.jpg",
-    thumb: "assets/images/landscape/thumbs/landscape_8.jpg",
-    category: "landscape",
-    title: "Landscape 8"
-  },
-  {
-    src: "assets/images/landscape/landscape_9.jpg",
-    thumb: "assets/images/landscape/thumbs/landscape_9.jpg",
-    category: "landscape",
-    title: "Landscape 9"
-  },
-  {
     src: "assets/images/street/street_1.jpg",
     thumb: "assets/images/street/thumbs/street_1.jpg",
     category: "street",
     title: "Street 1"
+  },
+  {
+    src: "assets/images/street/street_2.jpg",
+    thumb: "assets/images/street/thumbs/street_2.jpg",
+    category: "street",
+    title: "Street 2"
+  },
+  {
+    src: "assets/images/street/street_3.jpg",
+    thumb: "assets/images/street/thumbs/street_3.jpg",
+    category: "street",
+    title: "Street 3"
+  },
+  {
+    src: "assets/images/street/street_4.jpg",
+    thumb: "assets/images/street/thumbs/street_4.jpg",
+    category: "street",
+    title: "Street 4"
+  },
+  {
+    src: "assets/images/street/street_5.jpg",
+    thumb: "assets/images/street/thumbs/street_5.jpg",
+    category: "street",
+    title: "Street 5"
+  },
+  {
+    src: "assets/images/street/street_6.jpg",
+    thumb: "assets/images/street/thumbs/street_6.jpg",
+    category: "street",
+    title: "Street 6"
+  },
+  {
+    src: "assets/images/street/street_7.jpg",
+    thumb: "assets/images/street/thumbs/street_7.jpg",
+    category: "street",
+    title: "Street 7"
+  },
+  {
+    src: "assets/images/street/street_8.jpg",
+    thumb: "assets/images/street/thumbs/street_8.jpg",
+    category: "street",
+    title: "Street 8"
+  },
+  {
+    src: "assets/images/street/street_9.jpg",
+    thumb: "assets/images/street/thumbs/street_9.jpg",
+    category: "street",
+    title: "Street 9"
   },
   {
     src: "assets/images/street/street_10.jpg",
@@ -583,148 +607,16 @@ const galleryData = [
     title: "Street 10"
   },
   {
-    src: "assets/images/street/street_100.jpg",
-    thumb: "assets/images/street/thumbs/street_100.jpg",
-    category: "street",
-    title: "Street 100"
-  },
-  {
-    src: "assets/images/street/street_101.jpg",
-    thumb: "assets/images/street/thumbs/street_101.jpg",
-    category: "street",
-    title: "Street 101"
-  },
-  {
-    src: "assets/images/street/street_102.jpg",
-    thumb: "assets/images/street/thumbs/street_102.jpg",
-    category: "street",
-    title: "Street 102"
-  },
-  {
-    src: "assets/images/street/street_103.jpg",
-    thumb: "assets/images/street/thumbs/street_103.jpg",
-    category: "street",
-    title: "Street 103"
-  },
-  {
-    src: "assets/images/street/street_104.jpg",
-    thumb: "assets/images/street/thumbs/street_104.jpg",
-    category: "street",
-    title: "Street 104"
-  },
-  {
-    src: "assets/images/street/street_105.jpg",
-    thumb: "assets/images/street/thumbs/street_105.jpg",
-    category: "street",
-    title: "Street 105"
-  },
-  {
-    src: "assets/images/street/street_106.jpg",
-    thumb: "assets/images/street/thumbs/street_106.jpg",
-    category: "street",
-    title: "Street 106"
-  },
-  {
-    src: "assets/images/street/street_107.jpg",
-    thumb: "assets/images/street/thumbs/street_107.jpg",
-    category: "street",
-    title: "Street 107"
-  },
-  {
-    src: "assets/images/street/street_108.jpg",
-    thumb: "assets/images/street/thumbs/street_108.jpg",
-    category: "street",
-    title: "Street 108"
-  },
-  {
-    src: "assets/images/street/street_109.jpg",
-    thumb: "assets/images/street/thumbs/street_109.jpg",
-    category: "street",
-    title: "Street 109"
-  },
-  {
     src: "assets/images/street/street_11.jpg",
     thumb: "assets/images/street/thumbs/street_11.jpg",
     category: "street",
     title: "Street 11"
   },
   {
-    src: "assets/images/street/street_110.jpg",
-    thumb: "assets/images/street/thumbs/street_110.jpg",
-    category: "street",
-    title: "Street 110"
-  },
-  {
-    src: "assets/images/street/street_111.jpg",
-    thumb: "assets/images/street/thumbs/street_111.jpg",
-    category: "street",
-    title: "Street 111"
-  },
-  {
-    src: "assets/images/street/street_112.jpg",
-    thumb: "assets/images/street/thumbs/street_112.jpg",
-    category: "street",
-    title: "Street 112"
-  },
-  {
-    src: "assets/images/street/street_113.jpg",
-    thumb: "assets/images/street/thumbs/street_113.jpg",
-    category: "street",
-    title: "Street 113"
-  },
-  {
-    src: "assets/images/street/street_114.jpg",
-    thumb: "assets/images/street/thumbs/street_114.jpg",
-    category: "street",
-    title: "Street 114"
-  },
-  {
-    src: "assets/images/street/street_115.jpg",
-    thumb: "assets/images/street/thumbs/street_115.jpg",
-    category: "street",
-    title: "Street 115"
-  },
-  {
-    src: "assets/images/street/street_116.jpg",
-    thumb: "assets/images/street/thumbs/street_116.jpg",
-    category: "street",
-    title: "Street 116"
-  },
-  {
-    src: "assets/images/street/street_117.jpg",
-    thumb: "assets/images/street/thumbs/street_117.jpg",
-    category: "street",
-    title: "Street 117"
-  },
-  {
-    src: "assets/images/street/street_118.jpg",
-    thumb: "assets/images/street/thumbs/street_118.jpg",
-    category: "street",
-    title: "Street 118"
-  },
-  {
-    src: "assets/images/street/street_119.jpg",
-    thumb: "assets/images/street/thumbs/street_119.jpg",
-    category: "street",
-    title: "Street 119"
-  },
-  {
     src: "assets/images/street/street_12.jpg",
     thumb: "assets/images/street/thumbs/street_12.jpg",
     category: "street",
     title: "Street 12"
-  },
-  {
-    src: "assets/images/street/street_120.jpg",
-    thumb: "assets/images/street/thumbs/street_120.jpg",
-    category: "street",
-    title: "Street 120"
-  },
-  {
-    src: "assets/images/street/street_121.jpg",
-    thumb: "assets/images/street/thumbs/street_121.jpg",
-    category: "street",
-    title: "Street 121"
   },
   {
     src: "assets/images/street/street_13.jpg",
@@ -767,12 +659,6 @@ const galleryData = [
     thumb: "assets/images/street/thumbs/street_19.jpg",
     category: "street",
     title: "Street 19"
-  },
-  {
-    src: "assets/images/street/street_2.jpg",
-    thumb: "assets/images/street/thumbs/street_2.jpg",
-    category: "street",
-    title: "Street 2"
   },
   {
     src: "assets/images/street/street_20.jpg",
@@ -835,12 +721,6 @@ const galleryData = [
     title: "Street 29"
   },
   {
-    src: "assets/images/street/street_3.jpg",
-    thumb: "assets/images/street/thumbs/street_3.jpg",
-    category: "street",
-    title: "Street 3"
-  },
-  {
     src: "assets/images/street/street_30.jpg",
     thumb: "assets/images/street/thumbs/street_30.jpg",
     category: "street",
@@ -899,12 +779,6 @@ const galleryData = [
     thumb: "assets/images/street/thumbs/street_39.jpg",
     category: "street",
     title: "Street 39"
-  },
-  {
-    src: "assets/images/street/street_4.jpg",
-    thumb: "assets/images/street/thumbs/street_4.jpg",
-    category: "street",
-    title: "Street 4"
   },
   {
     src: "assets/images/street/street_40.jpg",
@@ -967,12 +841,6 @@ const galleryData = [
     title: "Street 49"
   },
   {
-    src: "assets/images/street/street_5.jpg",
-    thumb: "assets/images/street/thumbs/street_5.jpg",
-    category: "street",
-    title: "Street 5"
-  },
-  {
     src: "assets/images/street/street_50.jpg",
     thumb: "assets/images/street/thumbs/street_50.jpg",
     category: "street",
@@ -1031,12 +899,6 @@ const galleryData = [
     thumb: "assets/images/street/thumbs/street_59.jpg",
     category: "street",
     title: "Street 59"
-  },
-  {
-    src: "assets/images/street/street_6.jpg",
-    thumb: "assets/images/street/thumbs/street_6.jpg",
-    category: "street",
-    title: "Street 6"
   },
   {
     src: "assets/images/street/street_60.jpg",
@@ -1099,12 +961,6 @@ const galleryData = [
     title: "Street 69"
   },
   {
-    src: "assets/images/street/street_7.jpg",
-    thumb: "assets/images/street/thumbs/street_7.jpg",
-    category: "street",
-    title: "Street 7"
-  },
-  {
     src: "assets/images/street/street_70.jpg",
     thumb: "assets/images/street/thumbs/street_70.jpg",
     category: "street",
@@ -1163,12 +1019,6 @@ const galleryData = [
     thumb: "assets/images/street/thumbs/street_79.jpg",
     category: "street",
     title: "Street 79"
-  },
-  {
-    src: "assets/images/street/street_8.jpg",
-    thumb: "assets/images/street/thumbs/street_8.jpg",
-    category: "street",
-    title: "Street 8"
   },
   {
     src: "assets/images/street/street_80.jpg",
@@ -1231,12 +1081,6 @@ const galleryData = [
     title: "Street 89"
   },
   {
-    src: "assets/images/street/street_9.jpg",
-    thumb: "assets/images/street/thumbs/street_9.jpg",
-    category: "street",
-    title: "Street 9"
-  },
-  {
     src: "assets/images/street/street_90.jpg",
     thumb: "assets/images/street/thumbs/street_90.jpg",
     category: "street",
@@ -1297,34 +1141,142 @@ const galleryData = [
     title: "Street 99"
   },
   {
+    src: "assets/images/street/street_100.jpg",
+    thumb: "assets/images/street/thumbs/street_100.jpg",
+    category: "street",
+    title: "Street 100"
+  },
+  {
+    src: "assets/images/street/street_101.jpg",
+    thumb: "assets/images/street/thumbs/street_101.jpg",
+    category: "street",
+    title: "Street 101"
+  },
+  {
+    src: "assets/images/street/street_102.jpg",
+    thumb: "assets/images/street/thumbs/street_102.jpg",
+    category: "street",
+    title: "Street 102"
+  },
+  {
+    src: "assets/images/street/street_103.jpg",
+    thumb: "assets/images/street/thumbs/street_103.jpg",
+    category: "street",
+    title: "Street 103"
+  },
+  {
+    src: "assets/images/street/street_104.jpg",
+    thumb: "assets/images/street/thumbs/street_104.jpg",
+    category: "street",
+    title: "Street 104"
+  },
+  {
+    src: "assets/images/street/street_105.jpg",
+    thumb: "assets/images/street/thumbs/street_105.jpg",
+    category: "street",
+    title: "Street 105"
+  },
+  {
+    src: "assets/images/street/street_106.jpg",
+    thumb: "assets/images/street/thumbs/street_106.jpg",
+    category: "street",
+    title: "Street 106"
+  },
+  {
+    src: "assets/images/street/street_107.jpg",
+    thumb: "assets/images/street/thumbs/street_107.jpg",
+    category: "street",
+    title: "Street 107"
+  },
+  {
+    src: "assets/images/street/street_108.jpg",
+    thumb: "assets/images/street/thumbs/street_108.jpg",
+    category: "street",
+    title: "Street 108"
+  },
+  {
+    src: "assets/images/street/street_109.jpg",
+    thumb: "assets/images/street/thumbs/street_109.jpg",
+    category: "street",
+    title: "Street 109"
+  },
+  {
+    src: "assets/images/street/street_110.jpg",
+    thumb: "assets/images/street/thumbs/street_110.jpg",
+    category: "street",
+    title: "Street 110"
+  },
+  {
+    src: "assets/images/street/street_111.jpg",
+    thumb: "assets/images/street/thumbs/street_111.jpg",
+    category: "street",
+    title: "Street 111"
+  },
+  {
+    src: "assets/images/street/street_112.jpg",
+    thumb: "assets/images/street/thumbs/street_112.jpg",
+    category: "street",
+    title: "Street 112"
+  },
+  {
+    src: "assets/images/street/street_113.jpg",
+    thumb: "assets/images/street/thumbs/street_113.jpg",
+    category: "street",
+    title: "Street 113"
+  },
+  {
+    src: "assets/images/street/street_114.jpg",
+    thumb: "assets/images/street/thumbs/street_114.jpg",
+    category: "street",
+    title: "Street 114"
+  },
+  {
+    src: "assets/images/street/street_115.jpg",
+    thumb: "assets/images/street/thumbs/street_115.jpg",
+    category: "street",
+    title: "Street 115"
+  },
+  {
+    src: "assets/images/street/street_116.jpg",
+    thumb: "assets/images/street/thumbs/street_116.jpg",
+    category: "street",
+    title: "Street 116"
+  },
+  {
+    src: "assets/images/street/street_117.jpg",
+    thumb: "assets/images/street/thumbs/street_117.jpg",
+    category: "street",
+    title: "Street 117"
+  },
+  {
+    src: "assets/images/street/street_118.jpg",
+    thumb: "assets/images/street/thumbs/street_118.jpg",
+    category: "street",
+    title: "Street 118"
+  },
+  {
+    src: "assets/images/street/street_119.jpg",
+    thumb: "assets/images/street/thumbs/street_119.jpg",
+    category: "street",
+    title: "Street 119"
+  },
+  {
+    src: "assets/images/street/street_120.jpg",
+    thumb: "assets/images/street/thumbs/street_120.jpg",
+    category: "street",
+    title: "Street 120"
+  },
+  {
+    src: "assets/images/street/street_121.jpg",
+    thumb: "assets/images/street/thumbs/street_121.jpg",
+    category: "street",
+    title: "Street 121"
+  },
+  {
     src: "assets/images/film/film-1.jpg",
     thumb: "assets/images/film/thumbs/film-1.jpg",
     category: "film",
     title: "Film 1"
-  },
-  {
-    src: "assets/images/film/film-10.jpg",
-    thumb: "assets/images/film/thumbs/film-10.jpg",
-    category: "film",
-    title: "Film 10"
-  },
-  {
-    src: "assets/images/film/film-11.jpg",
-    thumb: "assets/images/film/thumbs/film-11.jpg",
-    category: "film",
-    title: "Film 11"
-  },
-  {
-    src: "assets/images/film/film-12.jpg",
-    thumb: "assets/images/film/thumbs/film-12.jpg",
-    category: "film",
-    title: "Film 12"
-  },
-  {
-    src: "assets/images/film/film-13.jpg",
-    thumb: "assets/images/film/thumbs/film-13.jpg",
-    category: "film",
-    title: "Film 13"
   },
   {
     src: "assets/images/film/film-2.jpg",
@@ -1375,58 +1327,28 @@ const galleryData = [
     title: "Film 9"
   },
   {
-    src: "assets/images/other/other_1.jpg",
-    thumb: "assets/images/other/thumbs/other_1.jpg",
-    category: "other",
-    title: "Other 1"
+    src: "assets/images/film/film-10.jpg",
+    thumb: "assets/images/film/thumbs/film-10.jpg",
+    category: "film",
+    title: "Film 10"
   },
   {
-    src: "assets/images/other/other_10.jpg",
-    thumb: "assets/images/other/thumbs/other_10.jpg",
-    category: "other",
-    title: "Other 10"
+    src: "assets/images/film/film-11.jpg",
+    thumb: "assets/images/film/thumbs/film-11.jpg",
+    category: "film",
+    title: "Film 11"
   },
   {
-    src: "assets/images/other/other_11.jpg",
-    thumb: "assets/images/other/thumbs/other_11.jpg",
-    category: "other",
-    title: "Other 11"
+    src: "assets/images/film/film-12.jpg",
+    thumb: "assets/images/film/thumbs/film-12.jpg",
+    category: "film",
+    title: "Film 12"
   },
   {
-    src: "assets/images/other/other_12.jpg",
-    thumb: "assets/images/other/thumbs/other_12.jpg",
-    category: "other",
-    title: "Other 12"
-  },
-  {
-    src: "assets/images/other/other_13.jpg",
-    thumb: "assets/images/other/thumbs/other_13.jpg",
-    category: "other",
-    title: "Other 13"
-  },
-  {
-    src: "assets/images/other/other_14.jpg",
-    thumb: "assets/images/other/thumbs/other_14.jpg",
-    category: "other",
-    title: "Other 14"
-  },
-  {
-    src: "assets/images/other/other_15.jpg",
-    thumb: "assets/images/other/thumbs/other_15.jpg",
-    category: "other",
-    title: "Other 15"
-  },
-  {
-    src: "assets/images/other/other_16.jpg",
-    thumb: "assets/images/other/thumbs/other_16.jpg",
-    category: "other",
-    title: "Other 16"
-  },
-  {
-    src: "assets/images/other/other_17.jpg",
-    thumb: "assets/images/other/thumbs/other_17.jpg",
-    category: "other",
-    title: "Other 17"
+    src: "assets/images/film/film-13.jpg",
+    thumb: "assets/images/film/thumbs/film-13.jpg",
+    category: "film",
+    title: "Film 13"
   },
   {
     src: "assets/images/other/other_2.jpg",
@@ -1476,6 +1398,54 @@ const galleryData = [
     category: "other",
     title: "Other 9"
   },
+  {
+    src: "assets/images/other/other_10.jpg",
+    thumb: "assets/images/other/thumbs/other_10.jpg",
+    category: "other",
+    title: "Other 10"
+  },
+  {
+    src: "assets/images/other/other_11.jpg",
+    thumb: "assets/images/other/thumbs/other_11.jpg",
+    category: "other",
+    title: "Other 11"
+  },
+  {
+    src: "assets/images/other/other_12.jpg",
+    thumb: "assets/images/other/thumbs/other_12.jpg",
+    category: "other",
+    title: "Other 12"
+  },
+  {
+    src: "assets/images/other/other_13.jpg",
+    thumb: "assets/images/other/thumbs/other_13.jpg",
+    category: "other",
+    title: "Other 13"
+  },
+  {
+    src: "assets/images/other/other_14.jpg",
+    thumb: "assets/images/other/thumbs/other_14.jpg",
+    category: "other",
+    title: "Other 14"
+  },
+  {
+    src: "assets/images/other/other_15.jpg",
+    thumb: "assets/images/other/thumbs/other_15.jpg",
+    category: "other",
+    title: "Other 15"
+  },
+  {
+    src: "assets/images/other/other_16.jpg",
+    thumb: "assets/images/other/thumbs/other_16.jpg",
+    category: "other",
+    title: "Other 16"
+  },
+  {
+    src: "assets/images/other/other_17.jpg",
+    thumb: "assets/images/other/thumbs/other_17.jpg",
+    category: "other",
+    title: "Other 17"
+  }
 ];
 
 export default galleryData;
